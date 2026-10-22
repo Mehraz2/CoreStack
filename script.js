@@ -114,27 +114,34 @@
 
 
 
-let age = 18 ;
+// let age = 18 ;
 
-if (age < 18 ) {
+// if (age < 18 ) {
 
-    console.log("MINOR");
+//     console.log("MINOR");
     
+// } else {
+
+//     console.log("ADULT");
+    
+// }
+
+
+
+// ADULT
+
+
+// ===============================================================================================================
+
+let amount = 1500;
+
+if (amount >= 2000) {
+    console.log("20% Discount");
+} else if (amount >= 1000) {
+    console.log("10% Discount");
 } else {
-
-    console.log("ADULT");
-    
+    console.log("No Discount");
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
