@@ -97,14 +97,51 @@
 // ===============================================================================
 
 
-let age = 16;
+// let age = 16;
 
-if (age <18 || age > 60 ) {
+// if (age <18 || age > 60 ) {
 
-    console.log("Special Group");
+//     console.log("Special Group");
+    
+// } else {
+
+//     console.log("Normal Group");
+    
+// }
+
+
+// ===========================================================================================
+
+
+
+let age = 18 ;
+
+if (age < 18 ) {
+
+    console.log("MINOR");
     
 } else {
 
-    console.log("Normal Group");
+    console.log("ADULT");
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
