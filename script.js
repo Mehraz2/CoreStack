@@ -166,36 +166,66 @@
 
 // ==================================================================================================================
 
+// 1. Greater Than (>)
 
 
+// let a = 15;
+// let b = 10;
 
-let a = 15;
-let b = 10;
-
-if (a > b) {
-    console.log("A is Greater");
+// if (a > b) {
+//     console.log("A is Greater");
     
-} else {
-    console.log("A is Not Greater");
+// } else {
+//     console.log("A is Not Greater");
     
-}
+// }
 
 
 
 
+// Output:
+// A is Greater
+
+
+// Reason (কেন এই output আসবে?):
+// - a-এর value হলো 15।
+// - b-এর value হলো 10।
+// - Condition হলো a > b, অর্থাৎ 15 > 10।
+// - ১৫, ১০-এর চেয়ে বড়। তাই condition true।
+// - এজন্য if-এর ভেতরের code চলবে।
+// Logic: if condition true হলে "A is Greater" print হবে। false হলে "A is Not Greater" print হবে।
+
+
+
+// ========================================================================================================================================
+
+
+// 2. Less Than (<)
+
+
+// let age = 16;
+
+// if (age < 18 ) {
+//      console.log("Minor");
+     
+// } else {
+//     console.log("Adult");
+    
+// }
+
+
+// Output:
+// Minor
+
+
+// Reason:
+// - age-এর value হলো 16।
+// - Condition হলো age < 18, অর্থাৎ 16 < 18।
+// - ১৬, ১৮-এর চেয়ে ছোট। তাই condition true।
+// - এজন্য if-এর ভেতরের "Minor" print হবে।
+// Logic: বয়স ১৮-এর কম হলে "Minor" print হবে; অন্যথায় "Adult" print হবে।
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// =====================================================================================================================
