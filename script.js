@@ -300,22 +300,50 @@
 
 
 
+// ============================================================================================================================
+
+
+// 5. Strict Equality (===)
 
 
 
+// let password = "hello123";
+
+// let confirmPassword = "hello123";
+
+// if (password === confirmPassword) {
+//     console.log("password Matched");
+    
+// } else {
+//     console.log("Password Not Matched");
+    
+// }
 
 
 
+// Output:
+// Password Matched
+
+
+// Reason:
+// - password-এর value হলো "hello123"।
+// - confirmPassword-এর value-ও "hello123"।
+// - Condition হলো password === confirmPassword।
+// - দুটি value একই এবং দুটিই String data type।
+// - তাই condition true এবং "Password Matched" print হবে।
+// Logic: === value এবং data type—দুটিই একই কি না যাচাই করে।
+
+// উদাহরণ:
+// console.log(10 === 10);   // true
+// console.log(10 === "10"); // false
+// console.log(10 === 20);   // false
+
+
+// দ্বিতীয় উদাহরণে 10 হলো Number, কিন্তু "10" হলো String। তাই ===-এর ফল false।
 
 
 
-
-
-
-
-
-
-
+// ==========================================================================================================================================
 
 
 
