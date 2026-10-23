@@ -235,36 +235,68 @@
 
 
 
-let marks = 40;
+// let marks = 40;
 
-if (marks >= 40) {
-    console.log("Passed");
+// if (marks >= 40) {
+//     console.log("Passed");
     
-} else {
+// } else {
 
-    console.log("Failed");
+//     console.log("Failed");
     
-}
+// }
 
 
 
 
 
+// Output:
+// Passed
+
+
+// Reason:
+// - marks-এর value হলো 40।
+// - Condition হলো marks >= 40।
+// - >= মানে বড় অথবা সমান।
+// - এখানে 40 >= 40 সত্য, কারণ দুই পাশের value সমান।
+// - তাই condition true এবং "Passed" print হবে।
+// Logic: Marks ৪০ বা তার বেশি হলে "Passed" print হবে।
+
+// মনে রাখবে, >= শুধু বড় value নয়, সমান value-ও গ্রহণ করে।
 
 
 
 
+// =========================================================================================================================
 
 
 
 
+// 4. Less Than or Equal (<=)
 
 
 
+// let price = 500;
+
+// if (price <= 500) {
+//     console.log("Price is Within Budget");
+// } else {
+//     console.log("Price is Over Budget");
+// }
 
 
+// Output:
+// Price is Within Budget
 
 
+// Reason:
+// - price-এর value হলো 500।
+// - Condition হলো price <= 500।
+// - অর্থাৎ 500 <= 500।
+// - <= মানে ছোট অথবা সমান।
+// - এখানে দুই পাশের value সমান, তাই condition true।
+// - এজন্য "Price is Within Budget" print হবে।
+// Logic: দাম ৫০০ বা তার কম হলে "Price is Within Budget" print হবে।
 
 
 
