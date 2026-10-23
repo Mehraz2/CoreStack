@@ -133,15 +133,62 @@
 
 // ===============================================================================================================
 
-let amount = 1500;
+// let amount = 1500;
 
-if (amount >= 2000) {
-    console.log("20% Discount");
-} else if (amount >= 1000) {
-    console.log("10% Discount");
+// if (amount >= 2000) {
+//     console.log("20% Discount");
+// } else if (amount >= 1000) {
+//     console.log("10% Discount");
+// } else {tomar
+//     console.log("No Discount");
+// }
+
+
+
+// 10% Discount
+
+
+
+
+// 🧠 Logic
+
+// - if (amount >= 2000) — ২০০০ বা তার বেশি হলে ২০% discount।
+// - else if (amount >= 1000) — প্রথম condition সত্য না হলে, ১০০০ বা তার বেশি হলে ১০% discount।
+// - else — উপরের কোনো condition সত্য না হলে "No Discount"।
+
+// : বড় amount-এর condition আগে check করব, তারপর ছোট amount-এর condition। এতে discount-এর সঠিক result পাওয়া যাবে। 💪
+
+
+
+
+
+// =================================================================================================================
+
+// ==================================================================================================================
+
+
+
+
+let a = 15;
+let b = 10;
+
+if (a > b) {
+    console.log("A is Greater");
+    
 } else {
-    console.log("No Discount");
+    console.log("A is Not Greater");
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
