@@ -487,13 +487,77 @@
 // console.log(city);
 
 
-let score = 50 ;
+// let score = 50 ;
 
-console.log(score);
+// console.log(score);
 
- score = (80);
+//  score = (80);
 
-console.log(score);
+// console.log(score);
+
+
+
+
+
+// ======================================================================================================================
+
+
+// Lesson 1: Variable কী?
+// Variable হলো একটা বাক্সের মতো, যেখানে কোনো value রাখা যায়।
+
+
+
+// const name = "Mehraz"
+
+// let age = 20;
+
+// console.log(name);
+// console.log(age);
+
+
+// Output:
+// Rahim
+// 20
+
+
+// সহজভাবে বুঝো:
+// - const → value আবার নতুন করে assign করা যাবে না।
+// - let → value পরিবর্তন করা যাবে।
+// - console.log() → value Console-এ দেখায়।
+// - "Rahim" হলো String, আর 20 হলো Number।
+
+// ===========================================================================================================================================
+
+
+
+
+
+
+// let price = 100;
+
+// console.log(price);
+
+// price = 150;
+
+// console.log(price);
+
+
+
+
+
+
+
+
+
+// const country = "Bangladesh";
+// console.log(country);
+
+
+
+
+let age = 18;
+age = 21;
+console.log(age);
 
 
 
