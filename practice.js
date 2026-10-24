@@ -404,41 +404,60 @@
 // ====================================================================================================================================
 
 
-const users = [
+// const users = [
 
-    { name: "Rohit", isActive: true },
-    { name: "Mehraz", isActive: true },
-    { name: "Noorha", isActive: false },
-    { name: "Neymar", isActive: true },
-    { name: "Ronaldo", isActive: false },
+//     { name: "Rohit", isActive: true },
+//     { name: "Mehraz", isActive: true },
+//     { name: "Noorha", isActive: false },
+//     { name: "Neymar", isActive: true },
+//     { name: "Ronaldo", isActive: false },
   
+// ];
+
+
+// let count = 0;
+
+// users.forEach((user) => {
+//   if (user.isActive) {
+//     count++;
+//   }
+// });
+
+// console.log(count);
+
+
+
+// কারণ, isActive: true আছে ৩ জনের:
+// - Rahim ✅
+// - Sakib ✅
+// - Nabil ✅
+// তাই count++ মোট ৩ বার চলবে এবং output হবে 3।
+
+
+// =================================================================================================================================
+
+
+
+const users = [
+  { name: "Rahim", isActive: true },
+  { name: "Karim", isActive: false },
+  { name: "Sakib", isActive: true }
 ];
 
-
-let count = 0;
+const activeUsers = [];
 
 users.forEach((user) => {
   if (user.isActive) {
-    count++;
+
+      activeUsers.push(user.name);
   }
 });
 
-console.log(count);
+console.log(activeUsers);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+activeUsers.push(user.name); — এটি activeUsers array-তে active user-এর নাম যোগ করবে।
 
 
 
