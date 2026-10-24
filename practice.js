@@ -438,32 +438,32 @@
 
 
 
-const users = [
-  { name: "Rahim", isActive: true },
-  { name: "Karim", isActive: false },
-  { name: "Sakib", isActive: true }
-];
+// const users = [
+//   { name: "Rahim", isActive: true },
+//   { name: "Karim", isActive: false },
+//   { name: "Sakib", isActive: true }
+// ];
 
-const activeUsers = [];
+// const activeUsers = [];
 
-users.forEach((user) => {
-  if (user.isActive) {
+// users.forEach((user) => {
+//   if (user.isActive) {
 
-      activeUsers.push(user.name);
-  }
-});
+//       activeUsers.push(user.name);
+//   }
+// });
 
-console.log(activeUsers);
-
-
-
-activeUsers.push(user.name); — এটি activeUsers array-তে active user-এর নাম যোগ করবে।
+// console.log(activeUsers);
 
 
+
+// activeUsers.push(user.name); — এটি activeUsers array-তে active user-এর নাম যোগ করবে।
 
 
 
 
+
+// ====================================================================================================================================================
 
 
 
