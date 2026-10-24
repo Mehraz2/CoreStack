@@ -471,12 +471,29 @@
 
 
 
+// const name = "Rahim";
+
+// console.log(name);
 
 
 
 
 
 
+
+
+// const city = "Noakhali";
+
+// console.log(city);
+
+
+let score = 50 ;
+
+console.log(score);
+
+ score = (80);
+
+console.log(score);
 
 
 
