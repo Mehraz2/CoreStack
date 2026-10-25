@@ -555,9 +555,70 @@
 
 
 
-let age = 18;
-age = 21;
-console.log(age);
+// let age = 18;
+// age = 21;
+// console.log(age);
+
+
+
+
+
+
+// let name = ("Mehraz")
+// console.log( name );
+
+//  age = 20;
+
+// console.log(age);
+
+
+
+// let studentName = "Mehraz";
+
+// let age = 20;
+
+// let marks = 65;
+
+// console.log("Student Name :", studentName);
+// console.log("Age :", age);
+// console.log("Previous Marks :", marks);
+
+// // update Student information 
+
+// age = 21;
+// marks = 85;
+
+// console.log("Update Age :", age);
+// console.log("Updtae Marks :", marks);
+
+
+
+
+
+
+
+
+
+
+
+
+let productName = "Keyboard";
+let price = 1200;
+let quantity = 2;
+
+
+console.log("Product Name :",productName);
+console.log("Price :", price);
+console.log("Quantity", quantity);
+
+// // update Student information 
+
+price = 1500;
+quantity = 3;
+
+console.log("Update Price :", price);
+console.log("Update Quantity :", quantity);
+
 
 
 
