@@ -531,6 +531,8 @@
 
 
 
+// Variables
+
 
 
 // let price = 100;
@@ -602,22 +604,110 @@
 
 
 
-let productName = "Keyboard";
-let price = 1200;
-let quantity = 2;
+// let productName = "Keyboard";
+// let price = 1200;
+// let quantity = 2;
 
 
-console.log("Product Name :",productName);
-console.log("Price :", price);
-console.log("Quantity", quantity);
+// console.log("Product Name :",productName);
+// console.log("Price :", price);
+// console.log("Quantity", quantity);
 
-// // update Student information 
+// // // update Student information 
 
-price = 1500;
-quantity = 3;
+// price = 1500;
+// quantity = 3;
 
-console.log("Update Price :", price);
-console.log("Update Quantity :", quantity);
+// console.log("Update Price :", price);
+// console.log("Update Quantity :", quantity);
+
+
+
+
+
+
+
+
+
+// =============================================================================================================================================
+
+
+// conditions
+
+// let age = 20;
+
+// if (age >= 18 ) {
+
+//     console.log("Adult");
+    
+    
+// }
+
+
+
+
+// let age = 16;
+
+// if (age >= 18) {
+
+//     console.log("Adult");
+    
+// } else {
+//     console.log("Not Adult");
+    
+// }
+
+
+
+let temperature = 30;
+
+if (temperature <= 20 ) {
+
+    console.log("Hot Temperature");
+    
+} else {
+    console.log("Cool Temperature");
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
