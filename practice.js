@@ -659,16 +659,350 @@
 
 
 
-let temperature = 30;
+// let temperature = 30;
 
-if (temperature <= 20 ) {
+// if (temperature <= 20 ) {
 
-    console.log("Hot Temperature");
+//     console.log("Hot Temperature");
+    
+// } else {
+//     console.log("Cool Temperature");
+    
+// }
+
+
+
+
+
+// let studentName = "Mehraz";
+// let marks = 32;
+
+// console.log("Student :", studentName);
+// console.log("Marks :", marks);
+
+// if (marks >= 80) {
+//     console.log("Grade A+");
+    
+// } else if (marks >= 70 ) {
+
+//     console.log("Grade A");
+    
+// } else if (marks >= 33) {
+
+//     console.log("Grade Pass");
+    
+// } else {
+//     console.log("Grade : fail");
+    
+// }
+
+
+
+
+
+
+
+// let temperature = 18
+
+// if (temperature <= 20 ) {
+
+//     console.log("Cool Weather");
+    
+// } else if ( temperature <= 30) {
+
+//     console.log("Normal Weather");
+     
+// } else {
+//     console.log("Hot Weather");
+    
+// }
+
+
+
+
+let isLoggedIn = true;
+let isAdmin = true;
+
+if (isLoggedIn && isAdmin) {
+    console.log("Admin Dashboard");
+    
+} else if (isLoggedIn) {
+
+    console.log("User Dashboard");
     
 } else {
-    console.log("Cool Temperature");
+    console.log("Please Login");
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
