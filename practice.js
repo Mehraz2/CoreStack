@@ -866,23 +866,37 @@
 
 
 
-let a = "40";
-let b = 10;
+// let a = "40";
+// let b = 10;
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-
-
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
 
 
 
 
 
 
+// let score = "25";
+// let convertedScore = Number(score);
+
+// console.log(typeof score);
+// console.log(typeof convertedScore);
+// console.log(convertedScore + 5);
 
 
+
+
+
+
+let price = "100";
+let convertedPrice = Number(price);
+
+console.log(typeof price);
+console.log(typeof convertedPrice);
+console.log(convertedPrice * 2);
 
 
 
