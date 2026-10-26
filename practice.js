@@ -740,23 +740,23 @@
 
 
 
-let isLoggedIn = false;
-let isAdmin = true;
-let hasPremium = true;
+// let isLoggedIn = false;
+// let isAdmin = true;
+// let hasPremium = true;
 
 
 
 
 
-if (!isLoggedIn) {
-    console.log("Please Login");    
-}  else if (isAdmin) {
-    console.log("Admin Access");
-} else if (hasPremium) {
-    console.log("Premium Access");    
-} else {
-    console.log("Basic Access");
-} 
+// if (!isLoggedIn) {
+//     console.log("Please Login");    
+// }  else if (isAdmin) {
+//     console.log("Admin Access");
+// } else if (hasPremium) {
+//     console.log("Premium Access");    
+// } else {
+//     console.log("Basic Access");
+// } 
 
 
 
@@ -767,33 +767,55 @@ if (!isLoggedIn) {
 
 
 
+// =========================================================================================================================================
 
 
 
 
+// Data type 
 
 
 
+// let userName = "Rahim";
+// let age = 20;
+// let isLoggedIn = true;
+// let address;
+// let selectedProduct = null;
 
 
 
 
 
 
+// console.log(typeof userName);
+// console.log(typeof age);
+// console.log(typeof isLoggedIn);
+// console.log(typeof address);
+// console.log(typeof selectedProduct);
 
 
 
 
 
 
+// let price = "500";
+// let quantity = 2;
 
+// console.log(typeof price);
+// console.log(typeof quantity);
+// console.log(price + quantity);
+// console.log(quantity + 3);
 
 
 
 
 
 
+// let a = "20";
+// let b = 10;
 
+// console.log(a - b);
+// console.log(a + b);
 
 
 
@@ -801,7 +823,11 @@ if (!isLoggedIn) {
 
 
 
+// let a = "20";
+// let b = 10;
 
+// console.log(a - b);
+// console.log(a + b);
 
 
 
@@ -809,7 +835,11 @@ if (!isLoggedIn) {
 
 
 
+// let x = "50";
+// let y = 5;
 
+// console.log(x * y);
+// console.log(x + y);
 
 
 
@@ -818,11 +848,31 @@ if (!isLoggedIn) {
 
 
 
+// let a = "20";
+// let b = 10;
 
+// console.log(a * b);
 
 
 
 
+// let price = "5";
+// let quantity = 3;
+
+// console.log(price * quantity);
+
+
+
+
+
+
+let a = "40";
+let b = 10;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
 
 
 
