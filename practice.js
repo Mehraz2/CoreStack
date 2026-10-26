@@ -720,26 +720,43 @@
 
 
 
-let isLoggedIn = true;
+// let isLoggedIn = true;
+// let isAdmin = true;
+
+// if (isLoggedIn && isAdmin) {
+//     console.log("Admin Dashboard");
+    
+// } else if (isLoggedIn) {
+
+//     console.log("User Dashboard");
+    
+// } else {
+//     console.log("Please Login");
+    
+// }
+
+
+
+
+
+
+let isLoggedIn = false;
 let isAdmin = true;
+let hasPremium = true;
 
-if (isLoggedIn && isAdmin) {
-    console.log("Admin Dashboard");
-    
-} else if (isLoggedIn) {
 
-    console.log("User Dashboard");
-    
+
+
+
+if (!isLoggedIn) {
+    console.log("Please Login");    
+}  else if (isAdmin) {
+    console.log("Admin Access");
+} else if (hasPremium) {
+    console.log("Premium Access");    
 } else {
-    console.log("Please Login");
-    
-}
-
-
-
-
-
-
+    console.log("Basic Access");
+} 
 
 
 
