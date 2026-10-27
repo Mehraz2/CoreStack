@@ -891,19 +891,38 @@
 
 
 
-let price = "100";
-let convertedPrice = Number(price);
+// let price = "100";
+// let convertedPrice = Number(price);
 
-console.log(typeof price);
-console.log(typeof convertedPrice);
-console.log(convertedPrice * 2);
-
-
+// console.log(typeof price);
+// console.log(typeof convertedPrice);
+// console.log(convertedPrice * 2);
 
 
 
 
 
+
+// let price = "100";
+// let convertedPrice = Number(price);
+
+// console.log(typeof price);
+// console.log(typeof convertedPrice);
+// console.log(convertedPrice + 50);
+
+
+
+
+
+let productPrice = "250";
+let deliveryCharge = 50;
+
+let totalPrice = Number(productPrice) + deliveryCharge;
+
+console.log(typeof productPrice);
+console.log(typeof deliveryCharge);
+console.log(typeof totalPrice);
+console.log(totalPrice);
 
 
 
