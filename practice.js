@@ -1080,31 +1080,53 @@
 
 
 
-const users = [
-    { name: "Rahim", isActive: true },
-    { name: "Karim", isActive: false },
-    { name: "Sakib", isActive: true },
-    { name: "Hasan", isActive: false }
-];
+// const users = [
+//     { name: "Rahim", isActive: true },
+//     { name: "Karim", isActive: false },
+//     { name: "Sakib", isActive: true },
+//     { name: "Hasan", isActive: false }
+// ];
 
 
 
-for (const user of users) {
-    console.log(user.name);
-}
-
-
-
-
+// for (const user of users) {
+//     console.log(user.name);
+// }
 
 
 
 
 
 
+// const users = [
+//     { name: "Rahim", isActive: true },
+//     { name: "Karim", isActive: false },
+//     { name: "Sakib", isActive: true },
+//     { name: "Hasan", isActive: false }
+// ];
 
 
 
+// const activeUsers = users.filter(function(user) {
+//     return !user.isActive === true;
+// });
+
+// console.log(activeUsers);
+
+
+
+const product = [
+    { name: "mouse", price: 400 },
+    { name: "keyboard", price: 1200},
+    { name: "monitor", price : 1200},
+    { name: "USB Cable", price: 200}
+]
+
+const result = product.filter(function(product) {
+    return product.price > 1000;
+});
+
+console.log(result);
 
 
 
