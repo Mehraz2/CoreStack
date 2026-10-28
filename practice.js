@@ -914,22 +914,40 @@
 
 
 
-let productPrice = "250";
-let deliveryCharge = 50;
+// let productPrice = "250";
+// let deliveryCharge = 50;
 
-let totalPrice = Number(productPrice) + deliveryCharge;
+// let totalPrice = Number(productPrice) + deliveryCharge;
 
-console.log(typeof productPrice);
-console.log(typeof deliveryCharge);
-console.log(typeof totalPrice);
-console.log(totalPrice);
-
-
+// console.log(typeof productPrice);
+// console.log(typeof deliveryCharge);
+// console.log(typeof totalPrice);
+// console.log(totalPrice);
 
 
 
 
 
+// ==============================================================================================================================================
+
+
+
+
+// Arrays: Active Users
+
+
+// ১. Array কী?
+// Array হলো একটি variable-এর মধ্যে একাধিক value সাজিয়ে রাখার ব্যবস্থা।
+
+// ধরো, তোমার ৪ জন বন্ধুর নাম রাখতে হবে। আলাদা আলাদা variable বানাতে পারো:
+// let friend1 = "Mehraz";
+// let friend2 = "Rohit";
+// let friend3 = "Hasan";
+// let friend4 = "Noorha";
+
+
+// কিন্তু অনেকগুলো নাম থাকলে এভাবে লেখা ঝামেলার। তাই আমরা Array ব্যবহার করতে পারি।
+// const friends = ["Mehraz", "Rohit", "Hasan", "Noorha"];
 
 
 
@@ -940,6 +958,19 @@ console.log(totalPrice);
 
 
 
+// const users = [
+//     {name : "Mehraz", isActive: true},
+//     {name : "Rohit", isActive: false},
+//     {name : "Noorha", isActive: true},
+//     {name : "Hasan", isActive: false},
+// ];
+
+
+// for (const user of users) {
+//     if (user.isActive) {
+//         console.log(user.name);
+//     }
+// }
 
 
 
@@ -947,10 +978,9 @@ console.log(totalPrice);
 
 
 
+const colors = ["red", "green", "yellow", "black"];
 
-
-
-
+console.log(colors[1]);
 
 
 
