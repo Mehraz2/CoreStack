@@ -1115,39 +1115,52 @@
 
 
 
-const product = [
-    { name: "mouse", price: 400 },
-    { name: "keyboard", price: 1200},
-    { name: "monitor", price : 1200},
-    { name: "USB Cable", price: 200}
-]
+// const product = [
+//     { name: "mouse", price: 400 },
+//     { name: "keyboard", price: 1200},
+//     { name: "monitor", price : 1200},
+//     { name: "USB Cable", price: 200}
+// ]
 
-const result = product.filter(function(product) {
-    return product.price > 1000;
+// const result = product.filter(function(product) {
+//     return product.price > 1000;
+// });
+
+// console.log(result);
+
+
+
+
+// const numbers = [10,20,30,40,];
+
+
+// const result = numbers.filter(function(number){
+
+//     return number > 20;
+// });
+
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+const numbers = [5, ,15,,25,35];
+
+const result = numbers.filter(function(number){
+
+    return number > 20;
 });
 
+
 console.log(result);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
