@@ -4,6 +4,8 @@
 
 // const { use } = require("react");
 
+// const { use } = require("react");
+
 
 // let age = 22;
 
@@ -978,44 +980,42 @@
 
 
 
-const colors = ["red", "green", "yellow", "black"];
+// const colors = ["red", "green", "yellow", "black"];
 
-console.log(colors[1]);
-
-
+// console.log(colors[1]);
 
 
 
 
+// const users = [
+//     { name: "Mehraz", isActive: true },
+//     { name: "Rohit", isActive: false },
+//     { name: "Noorha", isActive: false },
+//     { name: "Hasan", isActive: false }
+// ];
 
 
 
-
-
-
-
-
-
-
-
-
+// console.log(users[0].name);
+// console.log(users[1].name);
+// console.log(users[2].isActive);
 
 
 
 
 
+// const users = [
+//     { name: "mehraz", isActive: true},
+//     { name: "Rohit", isActive: true},
+//     { name: "Rakib", isActive: false},
+//     { name: "Aftub", isActive: false}
+// ];
 
 
-
-
-
-
-
-
-
-
-
-
+// for (const user of users) {
+//     if (user.isActive)
+//     console.log(user.name);
+// }
 
 
 
@@ -1025,6 +1025,25 @@ console.log(colors[1]);
 
 
 
+// const users = [
+//     { name: "Rahim", isActive: true },
+//     { name: "Karim", isActive: false },
+//     { name: "Sakib", isActive: true },
+//     { name: "Hasan", isActive: false }
+// ];
+
+
+
+
+
+// for (const user of users) {
+
+//     if (!user.isActive) {
+
+//         console.log(user.name);
+        
+//     }
+// }
 
 
 
@@ -1039,10 +1058,40 @@ console.log(colors[1]);
 
 
 
+// const users = [
+//     { name: "Rahim", isActive: true },
+//     { name: "Karim", isActive: false },
+//     { name: "Sakib", isActive: true },
+//     { name: "Hasan", isActive: false }
+// ];
+
+
+
+// for (const user of users) {
+
+//     if (user.isActive) {
+//         console.log(user.name);
+        
+//     }
+// }
 
 
 
 
+
+
+const users = [
+    { name: "Rahim", isActive: true },
+    { name: "Karim", isActive: false },
+    { name: "Sakib", isActive: true },
+    { name: "Hasan", isActive: false }
+];
+
+
+
+for (const user of users) {
+    console.log(user.name);
+}
 
 
 
