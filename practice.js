@@ -1243,39 +1243,96 @@
 
 
 
-const  users = [
-    {name: "Rahim", age: 17 },
-    {name: "Karim", age: 22 },
-    {name: "Sakib", age: 25 } 
+// const  users = [
+//     {name: "Rahim", age: 17 },
+//     {name: "Karim", age: 22 },
+//     {name: "Sakib", age: 25 } 
+// ];
+
+
+// const result = users.filter(function(user) {
+//       return user.age >= 18; 
+// });
+
+
+// console.log(result);
+
+
+
+
+
+
+
+// =======================================================================================================================================================
+
+
+
+
+// MAP()
+
+
+
+// const users = [
+//     {name: "Rahim", age: 17},
+//     {name: "Karim", age: 22},
+//     {name: "Sakib", age: 25}
+// ];
+
+
+// const result = users.map(function(user){
+
+//     return user.name ;
+// });
+
+
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+// const users = [
+//     {name: "Rahim", age: 17},
+//     {name: "Karim", age: 22},
+//     {name: "Sakib", age: 25}
+// ];
+
+
+// const result = users.map(function(user){
+
+//     return user.age ;
+// });
+
+
+// console.log(result);
+
+
+
+
+
+
+
+
+
+const users = [
+    {name: "Rahim", age: 17},
+    {name: "Karim", age: 22},
+    {name: "Sakib", age: 25}
 ];
 
 
-const result = users.filter(function(user) {
-      return user.age >= 18; 
+const result = users.map(function(user){
+
+    return user.name.toUpperCase() ;
 });
 
 
 console.log(result);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
