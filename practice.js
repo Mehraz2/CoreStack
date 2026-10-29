@@ -1210,25 +1210,52 @@
 
 
 
-const number = [5,10,15,20];
+// const number = [5,10,15,20];
 
-const result = number.filter(function(number) {
+// const result = number.filter(function(number) {
     
-    return number >=15;
-})
+//     return number >=15;
+// })
+
+// console.log(result);
+
+
+
+
+
+// const product = [
+//     {name: "Mouse", price: 400},
+//     {name: "Keyboard", price: 1200},
+//     {name: "Monitor", price: 800}
+// ];
+
+// const result = product.filter(function(item){
+//     return item.price > 500;
+// });
+
+
+// console.log(result);
+
+
+
+
+
+
+
+
+const  users = [
+    {name: "Rahim", age: 17 },
+    {name: "Karim", age: 22 },
+    {name: "Sakib", age: 25 } 
+];
+
+
+const result = users.filter(function(user) {
+      return user.age >= 18; 
+});
+
 
 console.log(result);
-
-
-
-
-
-
-
-
-
-
-
 
 
 
