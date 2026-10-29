@@ -447,3 +447,434 @@ Code চালানোর আগে সম্ভাব্য output অনু�
 আমার লক্ষ্য: শুধু code মুখস্থ করা নয়; প্রতিটি output কেন আসে, তা নিজের ভাষায় ব্যাখ্যা করতে শেখা।
 
 পরবর্তী ধাপ: Functions → Objects → Arrays Revision → Combined Logic Practice → Node.js → Express.js → Database → Projects → Deployment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+JavaScript Revision Notes — Array & Data Processing 📚
+
+1. Array কী?
+
+Array হলো একটি variable-এর মধ্যে একাধিক value রাখার পদ্ধতি।
+
+const fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits);
+
+Output:
+
+[ 'Apple', 'Mango', 'Banana' ]
+
+2. Array Access
+
+Array-এর নির্দিষ্ট item বের করতে index ব্যবহার করা হয়।
+
+মনে রাখবে: JavaScript-এ index শুরু হয় 0 থেকে।
+
+const fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits[0]); // Apple
+console.log(fruits[1]); // Mango
+console.log(fruits[2]); // Banana
+
+Object-এর Property Access
+
+const user = {
+    name: "Rahim",
+    age: 22
+};
+
+console.log(user.name); // Rahim
+console.log(user.age);  // 22
+
+user.name → name property-এর value
+
+user.age → age property-এর value
+
+fruits[0] → Array-এর প্রথম item
+
+3. Array-এর মধ্যে Object
+
+বাস্তব project-এ অনেক সময় Array-এর মধ্যে একাধিক Object থাকে।
+
+const users = [
+    { name: "Rahim", age: 17 },
+    { name: "Karim", age: 22 },
+    { name: "Sakib", age: 25 }
+];
+
+console.log(users[0].name); // Rahim
+console.log(users[1].age);  // 22
+
+Logic:
+
+users[0] → প্রথম user-এর Object
+
+users[0].name → প্রথম user-এর নাম
+
+users[1].age → দ্বিতীয় user-এর বয়স
+
+4. Loop দিয়ে Array-এর Data বের করা
+
+Loop ব্যবহার করে Array-এর প্রতিটি item একে একে পাওয়া যায়।
+
+for...of Loop
+
+const names = ["Rahim", "Karim", "Sakib"];
+
+for (const name of names) {
+    console.log(name);
+}
+
+Output:
+
+Rahim
+Karim
+Sakib
+
+Object-এর Array-তে Loop
+
+const users = [
+    { name: "Rahim", age: 17 },
+    { name: "Karim", age: 22 },
+    { name: "Sakib", age: 25 }
+];
+
+for (const user of users) {
+    console.log(user.name);
+}
+
+Output:
+
+Rahim
+Karim
+Sakib
+
+এখানে user হলো প্রতিবার পাওয়া একটি Object।
+
+5. if Condition দিয়ে Active Users বের করা
+
+if condition সত্য হলে তার ভেতরের code চলে।
+
+const users = [
+    { name: "Rahim", isActive: true },
+    { name: "Karim", isActive: false },
+    { name: "Sakib", isActive: true }
+];
+
+for (const user of users) {
+    if (user.isActive) {
+        console.log(user.name);
+    }
+}
+
+Output:
+
+Rahim
+Sakib
+
+Logic:
+
+Loop প্রতিটি user-এর Object নেয়।
+
+if পরীক্ষা করে user.isActive সত্য কি না।
+
+সত্য হলে নাম দেখায়।
+
+মিথ্যা হলে নাম দেখায় না।
+
+true মানে সত্য এবং false মানে মিথ্যা।
+
+6. Array Method — filter()
+
+.filter() condition পূরণ করা item নিয়ে একটি নতুন Array তৈরি করে।
+
+Example: বয়স ১৮ বা তার বেশি
+
+const users = [
+    { name: "Rahim", age: 17 },
+    { name: "Karim", age: 22 },
+    { name: "Sakib", age: 25 }
+];
+
+const result = users.filter(function(user) {
+    return user.age >= 18;
+});
+
+console.log(result);
+
+Output:
+
+[
+    { name: "Karim", age: 22 },
+    { name: "Sakib", age: 25 }
+]
+
+Active Users Filter
+
+const users = [
+    { name: "Rahim", isActive: true },
+    { name: "Karim", isActive: false },
+    { name: "Sakib", isActive: true }
+];
+
+const result = users.filter(function(user) {
+    return user.isActive;
+});
+
+console.log(result);
+
+Output: Rahim ও Sakib-এর Object-সহ একটি নতুন Array।
+
+মনে রাখবে:
+
+.filter() → শর্ত পূরণ করা item বেছে নেয়।
+
+return user.isActive → শুধু active user রাখে।
+
+7. Array Method — map()
+
+.map() Array-এর প্রতিটি item থেকে নতুন value তৈরি করে একটি নতুন Array দেয়।
+
+Example: শুধু নাম বের করা
+
+const users = [
+    { name: "Rahim", age: 17 },
+    { name: "Karim", age: 22 },
+    { name: "Sakib", age: 25 }
+];
+
+const result = users.map(function(user) {
+    return user.name;
+});
+
+console.log(result);
+
+Output:
+
+["Rahim", "Karim", "Sakib"]
+
+শুধু বয়স বের করা
+
+const result = users.map(function(user) {
+    return user.age;
+});
+
+console.log(result);
+
+Output:
+
+[17, 22, 25]
+
+প্রতিটি বয়সের সঙ্গে ১০ যোগ করা
+
+const result = users.map(function(user) {
+    return user.age + 10;
+});
+
+console.log(result);
+
+Output:
+
+[27, 32, 35]
+
+মনে রাখবে:
+
+.map() → প্রতিটি item-কে নতুন value-তে রূপান্তর করে।
+
+user.name → নাম দেয়।
+
+user.age → বয়স দেয়।
+
+user.age + 10 → বয়সের সঙ্গে ১০ যোগ করে।
+
+8. filter() ও map() এর পার্থক্য
+
+Method
+
+কাজ
+
+.filter()
+
+Condition অনুযায়ী item বেছে নেয়
+
+.map()
+
+প্রতিটি item থেকে নতুন value তৈরি করে
+
+একসঙ্গে ব্যবহার
+
+প্রথমে প্রাপ্তবয়স্ক user বাছাই, তারপর তাদের নাম বের করা যায়।
+
+const users = [
+    { name: "Rahim", age: 17 },
+    { name: "Karim", age: 22 },
+    { name: "Sakib", age: 25 }
+];
+
+const result = users
+    .filter(function(user) {
+        return user.age >= 18;
+    })
+    .map(function(user) {
+        return user.name;
+    });
+
+console.log(result);
+
+Output:
+
+["Karim", "Sakib"]
+
+Logic:
+
+.filter() → ১৮ বা তার বেশি বয়সের user বেছে নেয়।
+
+.map() → বাছাই করা user-দের নাম বের করে।
+
+9. Product Data Processing
+
+const products = [
+    { name: "Mouse", price: 500 },
+    { name: "Keyboard", price: 1000 },
+    { name: "Monitor", price: 5000 }
+];
+
+সব product-এর দাম বের করা
+
+const result = products.map(function(product) {
+    return product.price;
+});
+
+console.log(result);
+
+Output:
+
+[500, 1000, 5000]
+
+১০০০ টাকা বা তার বেশি দামের product বেছে নেওয়া
+
+const result = products.filter(function(product) {
+    return product.price >= 1000;
+});
+
+console.log(result);
+
+Output: Keyboard ও Monitor-এর Object-সহ Array।
+
+10. find() — পরবর্তী শেখার বিষয়
+
+.find() condition পূরণ করা প্রথম item খুঁজে দেয়।
+
+এটি .filter()-এর মতো সব matching item দেয় না।
+
+const users = [
+    { name: "Rahim", age: 17 },
+    { name: "Karim", age: 22 },
+    { name: "Sakib", age: 25 }
+];
+
+const result = users.find(function(user) {
+    return user.name === "Karim";
+});
+
+console.log(result);
+
+Output:
+
+{ name: "Karim", age: 22 }
+
+এই উদাহরণটি নোট হিসেবে রাখো। পরবর্তী practice-এ .find()-এর logic আলাদাভাবে শিখব।
+
+11. গুরুত্বপূর্ণ Operator
+
+Operator
+
+অর্থ
+
+Example
+
+>
+
+বড়
+
+age > 18
+
+<
+
+ছোট
+
+age < 18
+
+>=
+
+বড় অথবা সমান
+
+age >= 18
+
+<=
+
+ছোট অথবা সমান
+
+age <= 18
+
+===
+
+সমান value ও type
+
+name === "Karim"
+
+&&
+
+AND — উভয় শর্ত সত্য
+
+age >= 18 && isActive
+
+`
+
+
+
+`
+
+OR — যেকোনো একটি শর্ত সত্য
+
+`age < 18
+
+
+
+!isAct
