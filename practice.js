@@ -1319,6 +1319,31 @@
 
 
 
+// const users = [
+//     {name: "Rahim", age: 17},
+//     {name: "Karim", age: 22},
+//     {name: "Sakib", age: 25}
+// ];
+
+
+// const result = users.map(function(user){
+
+//     return user.name.toUpperCase() ;
+// });
+
+
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+
 const users = [
     {name: "Rahim", age: 17},
     {name: "Karim", age: 22},
@@ -1328,11 +1353,33 @@ const users = [
 
 const result = users.map(function(user){
 
-    return user.name.toUpperCase() ;
+    return user.age + 10 ;
 });
 
 
 console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
