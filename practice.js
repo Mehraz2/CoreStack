@@ -1344,30 +1344,42 @@
 
 
 
+// const users = [
+//     {name: "Rahim", age: 17},
+//     {name: "Karim", age: 22},
+//     {name: "Sakib", age: 25}
+// ];
+
+
+// const result = users.map(function(user){
+
+//     return user.age + 10 ;
+// });
+
+
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
 const users = [
-    {name: "Rahim", age: 17},
-    {name: "Karim", age: 22},
-    {name: "Sakib", age: 25}
+    { name: "Rahum", age: 17},
+    { name: "Karim", age: 22},
+    { name: "Sakib", age: 25}
 ];
 
+const result = users.map(function(user) {
 
-const result = users.map(function(user){
-
-    return user.age + 10 ;
+    return user.age + 5;
 });
 
-
 console.log(result);
-
-
-
-
-
-
-
-
-
-
 
 
 
