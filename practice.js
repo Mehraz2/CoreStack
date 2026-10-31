@@ -1368,36 +1368,18 @@
 
 
 
-const users = [
-    { name: "Rahum", age: 17},
-    { name: "Karim", age: 22},
-    { name: "Sakib", age: 25}
-];
+// const users = [
+//     { name: "Rahum", age: 17},
+//     { name: "Karim", age: 22},
+//     { name: "Sakib", age: 25}
+// ];
 
-const result = users.map(function(user) {
+// const result = users.map(function(user) {
 
-    return user.age + 5;
-});
+//     return user.age + 5;
+// });
 
-console.log(result);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(result);
 
 
 
@@ -1442,6 +1424,33 @@ console.log(result);
 
 
 
+// const user = {
+//     name: "Rahim",
+//     age : 22,
+//     address : {
+//         city : "Noakhali",
+//         country: "Bangladesh"
+//     }
+// };
+
+// console.log(user.address.city);
+
+
+
+
+
+
+
+// const user = {
+//     name: "Rahim",
+//     age : 22,
+//     address : {
+//         city : "Noakhali",
+//         country: "Bangladesh"
+//     }
+// };
+
+// console.log(user);
 
 
 
@@ -1453,6 +1462,36 @@ console.log(result);
 
 
 
+// const user = {
+//     name: "Rahim",
+//     age : 22,
+//     address : {
+//         city : "Noakhali",
+//         country: "Bangladesh"
+//     }
+// };
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.address.city);
+// console.log(user.address.country);
+
+
+
+
+// const product = {
+//     name : "Mouse",
+//     price : 500,
+//     details: {
+//         category : "Electronics",
+//         brand: "Logitech"
+//     }
+// };
+
+
+
+// console.log(product.details);
+// console.log(product.price);
 
 
 
@@ -1463,15 +1502,18 @@ console.log(result);
 
 
 
+const product = {
+    name : "Mouse",
+    price : 500,
+    details: {
+        category : "Electronics",
+        brand: "Logitech"
+    }
+};
 
 
 
-
-
-
-
-
-
+console.log(product.details.brand);
 
 
 
