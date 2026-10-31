@@ -1421,7 +1421,10 @@
 
 
 
+// =============================================================================================================
 
+
+// Nested Data
 
 
 // const user = {
@@ -1502,33 +1505,54 @@
 
 
 
-const product = {
-    name : "Mouse",
-    price : 500,
-    details: {
-        category : "Electronics",
-        brand: "Logitech"
+// const product = {
+//     name : "Mouse",
+//     price : 500,
+//     details: {
+//         category : "Electronics",
+//         brand: "Logitech"
+//     }
+// };
+
+
+
+// console.log(product.details.brand);
+
+
+
+
+
+
+
+// const student = {
+//     name :"Rahim",
+//     education: {
+//         collage: "Noakhali College",
+//         department: "BSS"
+//     }
+// };
+
+// console.log(student.education.collage);
+
+
+
+
+
+
+
+
+const student = {
+    name: "Karim",
+    age: 20,
+    education: {
+        college: "Noakhali College",
+        department: "BSS",
+        year: 1
     }
 };
 
 
-
-console.log(product.details.brand);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(student.education.department);
 
 
 
