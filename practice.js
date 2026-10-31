@@ -6,6 +6,8 @@
 
 // const { use } = require("react");
 
+// const { use } = require("react");
+
 
 // let age = 22;
 
@@ -1541,36 +1543,131 @@
 
 
 
-const student = {
-    name: "Karim",
-    age: 20,
-    education: {
-        college: "Noakhali College",
-        department: "BSS",
-        year: 1
+// const student = {
+//     name: "Karim",
+//     age: 20,
+//     education: {
+//         college: "Noakhali College",
+//         department: "BSS",
+//         year: 1
+//     }
+// };
+
+
+// console.log(student.education.department);
+
+
+
+
+
+
+
+
+
+
+
+
+// const user = {
+//     name: "Rahim",
+//     age: 22,
+//     address: {
+//         city: "Noakhali",
+//         country: "Bangladesh"
+//     }
+// };
+
+// console.log(user.name);
+// console.log(user.address.city);
+
+
+
+
+
+
+
+// const user = {
+//     name: "Karim",
+//     age: 25,
+//     address: {
+//         city: "Dhaka",
+//         country: "Bangladesh"
+//     },
+//     skills: {
+//         first: "JavaScript",
+//         second: "HTML"
+//     }
+// };
+
+
+
+// console.log(user.name);
+// console.log(user.address.city);
+// console.log(user.skills.first);
+
+
+
+// const user = [
+//     {
+//         name: "Rahim",
+//         age: 22,
+//         adress: {
+//             city:"Noakhli"
+//         }
+//     },
+//     {
+//         name: "Karim",
+//         age: 25,
+//         adress: {
+//             city: "Dhaka"
+//         }
+//     }
+// ];
+
+
+// console.log(user[0].name);
+
+
+
+// const user = [
+//     {
+//         name: "Rahim",
+//         age: 22,
+//         adress: {
+//             city:"Noakhli"
+//         }
+//     },
+//     {
+//         name: "Karim",
+//         age: 25,
+//         adress: {
+//             city: "Dhaka"
+//         }
+//     }
+// ];
+
+
+// console.log(user[1].adress.city);
+
+
+
+
+const user = [
+    {
+        name: "Rahim",
+        age: 22,
+        adress: {
+            city:"Noakhli"
+        }
+    },
+    {
+        name: "Karim",
+        age: 25,
+        adress: {
+            city: "Dhaka"
+        }
     }
-};
+];
 
 
-console.log(student.education.department);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(user[0].age);
 
