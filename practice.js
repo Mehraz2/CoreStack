@@ -1735,15 +1735,13 @@
 
 
 
-const numbers = [5, 12, 18, 7, 25, 30];
+// const numbers = [5, 12, 18, 7, 25, 30];
 
-for (const number of numbers) {
-    if (number % 2 === 0) {
-        console.log(number);
-    }
-}
-
-
+// for (const number of numbers) {
+//     if (number % 2 === 0) {
+//         console.log(number);
+//     }
+// }
 
 
 
@@ -1751,13 +1749,23 @@ for (const number of numbers) {
 
 
 
+// const numbers = [10, 15, 20, 25, 30, 35];
+
+
+// for (const number of numbers) {
+//     if(number % 5 ===0 ) {
+//         console.log(number);
+        
+//     }
+// }
 
 
 
 
 
+const number = 12;
 
-
+console.log(number % 5 === 0);
 
 
 
