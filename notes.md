@@ -1177,3 +1177,163 @@ for...of	Array-এর প্রতিটি Item একে একে Access ক�
 
 
 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+
+
+
+
+
+JavaScript Revision Notes
+
+Topic: Loops
+
+1. Loop কী?
+
+Loop ব্যবহার করে একই কাজ বারবার করা যায়। যেমন, একটি Array-এর সবগুলো item আলাদাভাবে print করা।
+
+2. for...of Loop
+
+for...of ব্যবহার করে Array-এর প্রতিটি item একে একে পাওয়া যায়।
+
+Example:
+
+const fruits = ["Apple", "Mango", "Banana"];
+
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+
+Output:
+
+Apple
+Mango
+Banana
+
+এখানে:
+
+fruits হলো Array।
+
+fruit হলো প্রতিবার পাওয়া একটি item।
+
+console.log(fruit) প্রতিটি item print করে।
+
+3. Loop-এর সঙ্গে Condition
+
+Loop-এর ভিতরে if ব্যবহার করে নির্দিষ্ট শর্ত অনুযায়ী item বের করা যায়।
+
+Example:
+
+const numbers = [5, 12, 18, 7, 25, 30];
+
+for (const number of numbers) {
+  if (number > 15) {
+    console.log(number);
+  }
+}
+
+Output:
+
+18
+25
+30
+
+এখানে শুধু 15-এর চেয়ে বড় সংখ্যাগুলো print হবে।
+
+4. Modulus Operator (%)
+
+% হলো Modulus Operator। এটি ভাগশেষ (Remainder) বের করে।
+
+Example:
+
+console.log(10 % 2); // 0
+console.log(10 % 3); // 1
+
+গুরুত্বপূর্ণ ব্যবহার:
+
+number % 2 === 0
+
+সংখ্যাটি জোড় (Even) কি না পরীক্ষা করে।
+
+number % 2 !== 0
+
+সংখ্যাটি বিজোড় (Odd) কি না পরীক্ষা করে।
+
+number % 3 === 0
+
+সংখ্যাটি ৩ দিয়ে নিঃশেষে বিভাজ্য কি না পরীক্ষা করে।
+
+5. Array থেকে নির্দিষ্ট সংখ্যা বের করা
+
+Example: Even Numbers
+
+const numbers = [5, 12, 18, 7, 25, 30];
+
+for (const number of numbers) {
+  if (number % 2 === 0) {
+    console.log(number);
+  }
+}
+
+Output:
+
+12
+18
+30
+
+Example: Multiples of 5
+
+const numbers = [10, 15, 20, 25, 30, 35];
+
+for (const number of numbers) {
+  if (number % 5 === 0) {
+    console.log(number);
+  }
+}
+
+Output:
+
+10
+15
+20
+25
+30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
