@@ -1651,23 +1651,383 @@
 
 
 
-const user = [
-    {
-        name: "Rahim",
-        age: 22,
-        adress: {
-            city:"Noakhli"
-        }
-    },
-    {
-        name: "Karim",
-        age: 25,
-        adress: {
-            city: "Dhaka"
-        }
+// const user = [
+//     {
+//         name: "Rahim",
+//         age: 22,
+//         adress: {
+//             city:"Noakhli"
+//         }
+//     },
+//     {
+//         name: "Karim",
+//         age: 25,
+//         adress: {
+//             city: "Dhaka"
+//         }
+//     }
+// ];
+
+
+// console.log(user[0].age);
+
+
+
+
+
+// const colors = ["Red", "Green", "Blue"];
+
+// for (const color of colors) {
+//     console.log(color);
+    
+// }
+
+
+
+// const fruits = ["Apple", "Mango", "Banana"];
+
+// for (const fruit of fruits) {
+//     console.log(fruit);
+    
+// }
+
+
+
+
+// const numbers = [10, 20, 30, 40, 50];
+
+// for (const number of numbers) {
+//     console.log(number * 2);
+// }
+
+
+
+
+
+
+
+// const numbers = [5, 10, 15, 20];
+
+// for (const number of numbers) {
+//     console.log(number + 5);
+// }
+
+
+
+
+
+// const numbers = [5, 12, 18, 7, 25, 30];
+
+// for (const number of numbers) {
+//     if (number > 15) {
+
+//         console.log(number);
+        
+
+//     }
+
+    
+// }
+
+
+
+
+
+
+
+const numbers = [5, 12, 18, 7, 25, 30];
+
+for (const number of numbers) {
+    if (number % 2 === 0) {
+        console.log(number);
     }
-];
+}
 
 
-console.log(user[0].age);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
