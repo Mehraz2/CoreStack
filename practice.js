@@ -1763,25 +1763,53 @@
 
 
 
-const number = 12;
+// const number = 12;
 
-console.log(number % 5 === 0);
-
-
+// console.log(number % 5 === 0);
 
 
 
 
 
 
+// ===================================================================================================
+
+
+
+// fundamentals of Js
+
+// array and objacts
+
+// function return
+
+// async js coding
 
 
 
 
+// var arr = [1, 2, 3, 4];
+
+
+// arr.forEach(function(val){
+
+//      console.log(val + " HEllo");
+     
+// })
 
 
 
 
+var arr = [1, 2, 3, 4];
+
+
+
+
+    var newarr = arr.map(function(val){
+        return 13;
+    })
+     
+
+console.log(newarr);
 
 
 
