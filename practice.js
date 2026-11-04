@@ -1861,16 +1861,6 @@
 
 
 
-var arr = [1, 2, 2, 3, 4];
-
-
-
-var ans =  arr.find(function(val) {
-    if (val ===2) return val;
-});
-
-
-console.log(ans);
 
 
 
@@ -1883,6 +1873,33 @@ console.log(ans);
 
 
 
+// var arr = [1, 2, 2, 3, 4];
+
+
+
+// var ans =  arr.find(function(val) {
+//     if (val ===2) return val;
+// });
+
+
+// console.log(ans);
+
+
+
+
+
+
+
+// var arr = [1,2, 3, 4];
+
+
+
+// var ans =  arr.find(function(val) {
+//     if (val ===2) return val;
+// });
+
+
+// console.log(ans);
 
 
 
@@ -1894,6 +1911,9 @@ console.log(ans);
 
 
 
+var arr = [5, 10, 15, 20];
+
+console.log(arr.indexOf(50));
 
 
 
@@ -1902,6 +1922,9 @@ console.log(ans);
 
 
 
+var arr = [10, 20, 30, 40, 50];
+
+console.log(arr.indexOf(40));
 
 
 
