@@ -1799,17 +1799,29 @@
 
 
 
-var arr = [1, 2, 3, 4];
+// var arr = [1, 2, 3, 4];
 
-
-
-
-    var newarr = arr.map(function(val){
-        return 13;
-    })
+//     var newarr = arr.map(function(val){
+//         return 13;
+//     })
      
 
-console.log(newarr);
+// console.log(newarr);
+
+
+
+
+
+
+var arr = [1, 2, 3, 4];
+
+var ans = arr.filter(function(val){
+
+    if (val >= 3) { return true;}
+    else return false;
+});
+
+console.log(ans);
 
 
 
@@ -1820,6 +1832,15 @@ console.log(newarr);
 
 
 
+var arr = [1, 2, 3, 4];
+
+var ans = arr.filter(function(val){
+
+    if (val > 3) { return true;}
+    else return false;
+});
+
+console.log(ans);
 
 
 
@@ -1828,10 +1849,15 @@ console.log(newarr);
 
 
 
+var arr = [1, 2, 3, 4];
 
+var ans = arr.filter(function(val){
 
+    if (val >= 12) { return true;}
+    else return false;
+});
 
-
+console.log(ans);
 
 
 
