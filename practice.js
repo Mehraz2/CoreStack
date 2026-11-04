@@ -1911,22 +1911,20 @@
 
 
 
-var arr = [5, 10, 15, 20];
+// var arr = [5, 10, 15, 20];
 
-console.log(arr.indexOf(50));
-
-
+// console.log(arr.indexOf(50));
 
 
 
 
 
 
-var arr = [10, 20, 30, 40, 50];
-
-console.log(arr.indexOf(40));
 
 
+// var arr = [10, 20, 30, 40, 50];
+
+// console.log(arr.indexOf(40));
 
 
 
@@ -1937,13 +1935,21 @@ console.log(arr.indexOf(40));
 
 
 
+var obj = {
+    name: "Mehraz",
+    age: 26,
+    city: "Chittagong"
+};
 
+// Object Freeze
+Object.freeze(obj);
 
+// Age পরিবর্তনের চেষ্টা
+obj.age = 30;
 
-
-
-
-
+// Output
+console.log(obj);
+console.log(obj.age);
 
 
 
