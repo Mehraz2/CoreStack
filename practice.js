@@ -1813,58 +1813,64 @@
 
 
 
-var arr = [1, 2, 3, 4];
+// var arr = [1, 2, 3, 4];
 
-var ans = arr.filter(function(val){
+// var ans = arr.filter(function(val){
 
-    if (val >= 3) { return true;}
-    else return false;
+//     if (val >= 3) { return true;}
+//     else return false;
+// });
+
+// console.log(ans);
+
+
+
+
+
+
+
+
+
+
+// var arr = [1, 2, 3, 4];
+
+// var ans = arr.filter(function(val){
+
+//     if (val > 3) { return true;}
+//     else return false;
+// });
+
+// console.log(ans);
+
+
+
+
+
+
+
+
+// var arr = [1, 2, 3, 4];
+
+// var ans = arr.filter(function(val){
+
+//     if (val >= 12) { return true;}
+//     else return false;
+// });
+
+// console.log(ans);
+
+
+
+var arr = [1, 2, 2, 3, 4];
+
+
+
+var ans =  arr.find(function(val) {
+    if (val ===2) return val;
 });
 
-console.log(ans);
-
-
-
-
-
-
-
-
-
-
-var arr = [1, 2, 3, 4];
-
-var ans = arr.filter(function(val){
-
-    if (val > 3) { return true;}
-    else return false;
-});
 
 console.log(ans);
-
-
-
-
-
-
-
-
-var arr = [1, 2, 3, 4];
-
-var ans = arr.filter(function(val){
-
-    if (val >= 12) { return true;}
-    else return false;
-});
-
-console.log(ans);
-
-
-
-
-
-
-
 
 
 
