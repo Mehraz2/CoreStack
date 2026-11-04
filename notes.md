@@ -1325,6 +1325,21 @@ Output:
 
 
 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+video
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 
@@ -1332,8 +1347,439 @@ Output:
 
 
 
+JavaScript Revision Notes
 
+Day: Array Methods (forEach, map, filter, find, indexOf)
 
+আজ আমরা JavaScript-এর Array Methods নিয়ে কাজ করেছি। এই Methods ব্যবহার করে Array-এর প্রতিটি Element নিয়ে কাজ করা, নতুন Array তৈরি করা, নির্দিষ্ট Element খুঁজে বের করা এবং Element-এর অবস্থান বের করা যায়।
 
+1. forEach()
 
+কাজ: Array-এর প্রতিটি Element-এর ওপর একবার করে কাজ করে।
 
+Example
+
+var arr = [1, 2, 3, 4];
+
+arr.forEach(function(val) {
+    console.log(val + " HEllo");
+});
+
+Explanation
+
+arr হলো একটি Array।
+
+forEach() Array-এর প্রতিটি Element-এর ওপর কাজ করে।
+
+function(val) প্রতিবার একটি করে Element গ্রহণ করে।
+
+val হলো বর্তমান Element।
+
+console.log() প্রতিটি Element-এর সঙ্গে " HEllo" যোগ করে দেখায়।
+
+Output
+
+1 HEllo
+2 HEllo
+3 HEllo
+4 HEllo
+
+মনে রাখবে: forEach() নিজে নতুন Array তৈরি করে না। এটি মূলত প্রতিটি Element-এর ওপর কাজ চালায়।
+
+2. map()
+
+কাজ: Array-এর প্রতিটি Element-এর ওপর কাজ করে একটি নতুন Array তৈরি করে।
+
+Example 1
+
+var arr = [1, 2, 3, 4];
+
+var newarr = arr.map(function(val) {
+    return 13;
+});
+
+console.log(newarr);
+
+Output
+
+[13, 13, 13, 13]
+
+Explanation
+
+arr.map() পুরোনো Array-এর প্রতিটি Element পরীক্ষা করে।
+
+function(val) প্রতিবার একটি Element গ্রহণ করে।
+
+return 13 প্রতিটি Element-এর পরিবর্তে 13 পাঠায়।
+
+newarr-এর মধ্যে নতুন Array জমা হয়।
+
+Example 2
+
+var arr = [1, 2, 3, 4];
+
+var newarr = arr.map(function(val) {
+    return val * 2;
+});
+
+console.log(newarr);
+
+Output
+
+[2, 4, 6, 8]
+
+Explanation
+
+প্রতিটি Element-কে 2 দিয়ে গুণ করা হয়েছে।
+
+1 × 2 = 2
+
+2 × 2 = 4
+
+3 × 2 = 6
+
+4 × 2 = 8
+
+মনে রাখবে: map() পুরোনো Array পরিবর্তন না করে নতুন Array তৈরি করে।
+
+3. filter()
+
+কাজ: নির্দিষ্ট শর্ত অনুযায়ী Array থেকে Element বাছাই করে নতুন Array তৈরি করে।
+
+Example 1: Greater than or equal to 3
+
+var arr = [1, 2, 3, 4];
+
+var ans = arr.filter(function(val) {
+    if (val >= 3) {
+        return true;
+    } else {
+        return false;
+    }
+});
+
+console.log(ans);
+
+Output
+
+[3, 4]
+
+Explanation
+
+এখানে val >= 3 দিয়ে পরীক্ষা করা হচ্ছে কোন Number 3 বা তার বেশি।
+
+val
+
+Condition
+
+Result
+
+1
+
+1 >= 3
+
+false
+
+2
+
+2 >= 3
+
+false
+
+3
+
+3 >= 3
+
+true
+
+4
+
+4 >= 3
+
+true
+
+return true = Element-টি নতুন Array-তে রাখবে।
+
+return false = Element-টি বাদ দেবে।
+
+Example 2: Greater than 3
+
+var arr = [1, 2, 3, 4];
+
+var ans = arr.filter(function(val) {
+    if (val > 3) {
+        return true;
+    } else {
+        return false;
+    }
+});
+
+console.log(ans);
+
+Output
+
+[4]
+
+কারণ শুধু 4 হলো 3-এর চেয়ে বড়।
+
+Example 3: Greater than or equal to 12
+
+var arr = [1, 2, 3, 4];
+
+var ans = arr.filter(function(val) {
+    if (val >= 12) {
+        return true;
+    } else {
+        return false;
+    }
+});
+
+console.log(ans);
+
+Output
+
+[]
+
+কারণ কোনো Number-ই 12 বা তার বেশি নয়।
+
+এটিকে Empty Array বলে।
+
+Example 4: Short Style
+
+var arr = [1, 2, 3, 4];
+
+var ans = arr.filter(function(val) {
+    return val >= 3;
+});
+
+console.log(ans);
+
+এখানে আলাদা if/else দরকার নেই। কারণ val >= 3 নিজেই true অথবা false দেয়।
+
+Duplicate Value Example
+
+var arr = [1, 2, 2, 3, 4];
+
+var ans = arr.filter(function(val) {
+    if (val === 2) return val;
+});
+
+console.log(ans);
+
+Output
+
+[2, 2]
+
+মনে রাখবে: filter() শর্ত পূরণ করা সব Element রাখে। কোনো Element না পেলে Empty Array [] দেয়।
+
+4. find()
+
+কাজ: Array-এর মধ্যে নির্দিষ্ট শর্ত পূরণ করা প্রথম Element খুঁজে বের করে।
+
+Example 1
+
+var arr = [10, 20, 30, 40];
+
+var ans = arr.find(function(val) {
+    return val > 20;
+});
+
+console.log(ans);
+
+Output
+
+30
+
+Explanation
+
+প্রথমে 10 পরীক্ষা করবে।
+
+এরপর 20 পরীক্ষা করবে।
+
+এরপর 30 পরীক্ষা করবে।
+
+30 শর্ত পূরণ করেছে।
+
+তাই 30 return করবে এবং খোঁজা বন্ধ করবে।
+
+Example 2: if Condition Style
+
+var arr = [1, 2, 3, 4];
+
+var ans = arr.find(function(val) {
+    if (val === 2) return val;
+});
+
+console.log(ans);
+
+Output
+
+2
+
+এখানে val === 2 দিয়ে পরীক্ষা করা হচ্ছে Element-এর মান 2 কি না।
+
+শর্ত পূরণ হলে return val সেই Value ফেরত দেয়।
+
+Duplicate Value Example
+
+var arr = [1, 2, 2, 3, 4];
+
+var ans = arr.find(function(val) {
+    if (val === 2) return val;
+});
+
+console.log(ans);
+
+Output
+
+2
+
+Array-তে দুটি 2 থাকলেও find() শুধু প্রথম matching Element ফেরত দেয়।
+
+দ্বিতীয় বা সব matching Element পেতে filter() ব্যবহার করতে হয়।
+
+মনে রাখবে:
+
+find() প্রথম matching Element দেয়।
+
+কিছু না পেলে undefined দেয়।
+
+এটি নতুন Array দেয় না।
+
+5. indexOf()
+
+কাজ: Array-এর মধ্যে নির্দিষ্ট Value কোন Index বা Position-এ আছে, তা খুঁজে বের করে।
+
+Example 1
+
+var arr = [10, 20, 30, 40];
+
+var ans = arr.indexOf(30);
+
+console.log(ans);
+
+Output
+
+2
+
+Explanation
+
+JavaScript Array-এর Index শুরু হয় 0 থেকে।
+
+Value
+
+Index
+
+10
+
+0
+
+20
+
+1
+
+30
+
+2
+
+40
+
+3
+
+তাই 30-এর Index হলো 2।
+
+Example 2: Value Not Found
+
+var arr = [5, 10, 15, 20];
+
+console.log(arr.indexOf(50));
+
+Output
+
+-1
+
+কারণ Array-এর মধ্যে 50 নেই।
+
+গুরুত্বপূর্ণ: indexOf() কোনো Value না পেলে সবসময় -1 দেয়। -2, -3 বা অন্য Negative Index দেয় না।
+
+Duplicate Value
+
+var arr = [10, 20, 20, 30];
+
+console.log(arr.indexOf(20));
+
+Output
+
+1
+
+একই Value একাধিকবার থাকলে indexOf() প্রথমটির Index দেয়।
+
+গুরুত্বপূর্ণ Comparison
+
+Method
+
+কাজ
+
+Return
+
+forEach()
+
+প্রতিটি Element নিয়ে কাজ
+
+undefined
+
+map()
+
+প্রতিটি Element থেকে নতুন Array
+
+নতুন Array
+
+filter()
+
+সব matching Element বাছাই
+
+নতুন Array
+
+find()
+
+প্রথম matching Element খোঁজা
+
+একটি Element
+
+indexOf()
+
+Value-এর অবস্থান খোঁজা
+
+Index অথবা -1
+
+গুরুত্বপূর্ণ JavaScript Concepts
+
+var
+
+Variable তৈরি করার একটি Keyword।
+
+var arr = [1, 2, 3];
+
+Array
+
+একটি Variable-এর মধ্যে একাধিক Value রাখার ব্যবস্থা।
+
+var numbers = [10, 20, 30];
+
+function(val)
+
+এখানে val হলো Parameter। Callback Function-এ প্রতিবার Array-এর একটি করে Element এই Parameter-এর মাধ্যমে পাওয়া যায়।
+
+return
+
+Function থেকে কোনো Value ফেরত পাঠায়।
+
+map()-এ return করা Value নতুন Array-তে যায়।
+
+filter()-এ return-এর Truthy/Falsy ফল দিয়ে Element রাখা বা বাদ দেওয়া হয়।
+
+find()-এ প্রথম Truthy ফল পাওয়া Element ফেরত আসে।
+
+console.log()
+
+Console-এ কোনো Value বা Result দেখায়।
