@@ -1783,3 +1783,269 @@ find()-এ প্রথম Truthy ফল পাওয়া Element ফেরত �
 console.log()
 
 Console-এ কোনো Value বা Result দেখায়।
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========================================================= -->
+<!-- ========================================================= -->
+<!-- ========================================================= -->
+
+
+
+JavaScript Revision Notes
+
+1. Array Methods
+
+forEach()
+
+Array-এর প্রতিটি Element-এর উপর কাজ করে।
+
+প্রতিটি Element একবার করে Access করে।
+
+map()
+
+Array-এর প্রতিটি Element নিয়ে কাজ করে।
+
+নতুন Array তৈরি করে।
+
+return করা Value নতুন Array-তে জমা হয়।
+
+Original Array পরিবর্তন করে না।
+
+filter()
+
+Condition অনুযায়ী Element বাছাই করে।
+
+যেসব Element Condition পূরণ করে, সেগুলো নতুন Array-তে রাখে।
+
+কোনো Element না মিললে Empty Array [] দেয়।
+
+find()
+
+Condition অনুযায়ী প্রথম Matching Element খুঁজে বের করে।
+
+প্রথম Match পাওয়ার পর Search বন্ধ করে।
+
+Match না পেলে undefined দেয়।
+
+indexOf()
+
+Array-এর মধ্যে কোনো Element-এর Index বের করে।
+
+Index শুরু হয় 0 থেকে।
+
+Element না পেলে -1 দেয়।
+
+Duplicate থাকলে প্রথমটির Index দেয়।
+
+2. JavaScript Object
+
+Object হলো Key-Value আকারে সম্পর্কিত Data রাখার একটি উপায়।
+
+Key = Property-এর নাম
+
+Value = Property-এর Data
+
+Object-এর Data Access, Update, Add এবং Delete করা যায়।
+
+Empty Object
+
+{}
+
+Object.freeze()
+
+Object Freeze করে।
+
+নতুন Property যোগ করা যায় না।
+
+Property Delete করা যায় না।
+
+Property-এর Value পরিবর্তন করা যায় না।
+
+Object-এর Data দেখা যায়।
+
+এটি Shallow Freeze।
+
+3. Length
+
+.length দিয়ে Array-এর Element সংখ্যা অথবা String-এর Character সংখ্যা বের করা যায়।
+
+arr.length = Array-এর মোট Element
+
+name.length = String-এর মোট Character
+
+Empty String-এর Length = 0
+
+.length একটি Property, Function নয়।
+
+4. JavaScript Function
+
+Function হলো নির্দিষ্ট কাজ করার জন্য তৈরি Reusable Code Block।
+
+Function Declaration
+
+একটি Function তৈরি করা।
+
+Function Call
+
+Function-এর নামের পরে () দিয়ে Function চালানো।
+
+return
+
+Function থেকে Value ফেরত দেয়।
+
+return-এর পরে Expression বা Value লেখা যায়।
+
+ফেরত আসা Value Variable-এ রাখা যায়।
+
+return Function-এর Execution বন্ধ করে দেয়।
+
+console.log()
+
+Console-এ Output দেখায়।
+
+গুরুত্বপূর্ণ পার্থক্য
+
+return = Value ফেরত দেয়।
+
+console.log() = Value দেখায়।
+
+Variable = Value সংরক্ষণ করে।
+
+5. Math এবং Async JavaScript
+
+এগুলো এখনো বিস্তারিতভাবে শেখা হয়নি।
+
+পরবর্তী সম্ভাব্য Topics:
+
+JavaScript Math Object
+
+Function Revision
+
+Objects Revision
+
+Async JavaScript
+
+Promises
+
+Async / Await
+
+API এবং Fetch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
