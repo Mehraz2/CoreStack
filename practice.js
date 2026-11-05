@@ -1935,28 +1935,33 @@
 
 
 
-var obj = {
-    name: "Mehraz",
-    age: 26,
-    city: "Chittagong"
-};
+// var obj = {
+//     name: "Mehraz",
+//     age: 26,
+//     city: "Chittagong"
+// };
 
-// Object Freeze
-Object.freeze(obj);
+// // Object Freeze
+// Object.freeze(obj);
 
-// Age পরিবর্তনের চেষ্টা
-obj.age = 30;
+// // Age পরিবর্তনের চেষ্টা
+// obj.age = 30;
 
-// Output
-console.log(obj);
-console.log(obj.age);
-
-
+// // Output
+// console.log(obj);
+// console.log(obj.age);
 
 
 
 
 
+function abcd () {
+    return 12;
+}
+
+
+
+var ans = abcd();
 
 
 
@@ -1968,7 +1973,13 @@ console.log(obj.age);
 
 
 
+function abcd () {
+    return "hello world";
+}
 
+
+
+var ans = abcd();
 
 
 
