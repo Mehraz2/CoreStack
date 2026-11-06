@@ -1955,44 +1955,53 @@
 
 
 
-function abcd () {
-    return 12;
+// function abcd () {
+//     return 12;
+// }
+
+
+
+// var ans = abcd();
+
+
+
+
+
+
+
+
+
+
+
+// function abcd () {
+//     return "hello world";
+// }
+
+
+
+// var ans = abcd();
+
+
+
+// var blob = await fetch (`https://randomuser.me/api/`);
+// var res = await blob.json();
+
+// console.log(res);
+
+
+
+
+
+
+async function abcd {
+
+    var blob = await fetch (`http://randomuser.me/api/`);
+
+    var ans = blob.json();
 }
 
 
-
-var ans = abcd();
-
-
-
-
-
-
-
-
-
-
-
-function abcd () {
-    return "hello world";
-}
-
-
-
-var ans = abcd();
-
-
-
-
-
-
-
-
-
-
-
-
-
+abcd();
 
 
 
