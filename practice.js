@@ -1993,17 +1993,15 @@
 
 
 
-async function abcd {
+// async function abcd {
 
-    var blob = await fetch (`http://randomuser.me/api/`);
+//     var blob = await fetch (`http://randomuser.me/api/`);
 
-    var ans = blob.json();
-}
-
-
-abcd();
+//     var ans = blob.json();
+// }
 
 
+// abcd();
 
 
 
@@ -2011,10 +2009,22 @@ abcd();
 
 
 
+// console.log("Hello");
+
+// setTimeout(function () {
+//     console.log("Wait");
+// }, 2000);
 
 
 
 
+console.log("A");
+
+setTimeout(function () {
+    console.log("B");
+}, 3000);
+
+console.log("C");
 
 
 
