@@ -1,23 +1,109 @@
-🎉 JavaScript DOM Practice Completed — Day 1 to Day 26
+🚀 CoreStack — Backend Development Journey
 
-I have successfully completed 26 days of JavaScript DOM practice.
+📌 About This Repository
 
-Throughout these 26 days, I worked on practical exercises to understand how JavaScript interacts with HTML elements and how to make web pages dynamic and interactive.
+CoreStack is my personal learning and practice repository, where I am building my foundation in JavaScript and Backend Development.
 
-What I Achieved
+My goal is to understand how backend systems work, improve my problem-solving skills, and gradually become a professional Backend Developer through consistent practice and real-world projects.
 
-Completed all 26 days of DOM practice.
+📚 JavaScript Foundation
 
-Practiced selecting and manipulating HTML elements.
+Before starting backend development, I revised and practiced JavaScript fundamentals.
 
-Worked with DOM events and user interactions.
+Topics covered:
 
-Improved my JavaScript practical skills.
+Variables (let, const)
 
-Built a stronger foundation for frontend and backend development.
+Data Types
 
-My Next Goal
+Conditions and Logical Operators
 
-Continue improving my JavaScript skills and move forward with Node.js and backend development.
+Loops
 
-26 Days Completed. More Learning Ahead! 🚀
+Functions and Return
+
+Arrays and Array Methods
+
+Objects
+
+forEach(), map(), filter(), find()
+
+indexOf()
+
+Asynchronous JavaScript
+
+Promises and async/await
+
+setTimeout() and Event Loop basics
+
+Fetch API
+
+🖥️ Backend Development — In Progress
+
+I have started learning backend development with Node.js.
+
+Currently exploring:
+
+Introduction to Node.js
+
+Running JavaScript outside the browser
+
+Node.js REPL
+
+Understanding synchronous and asynchronous execution
+
+File System Operations (Learning)
+
+🛠️ Technologies
+
+JavaScript
+
+Node.js
+
+HTML
+
+CSS
+
+Git & GitHub
+
+VS Code
+
+🎯 My Learning Roadmap
+
+JavaScript Fundamentals Revision
+
+JavaScript Array Methods Practice
+
+Asynchronous JavaScript Basics
+
+Node.js Fundamentals
+
+File System Module
+
+NPM and Node.js Modules
+
+Express.js
+
+REST APIs
+
+MongoDB
+
+Authentication & Authorization
+
+Build Real-World Backend Projects
+
+Deployment
+
+💡 My Goal
+
+I am documenting my learning journey, daily coding practice, mistakes, and improvements through this repository.
+
+I believe in learning by building, practicing consistently, and understanding the logic behind every line of code.
+
+One Step at a Time. Building My Backend Skills with CoreStack. 🔥
+
+👨‍💻 Developer
+
+Mehraz
+
+GitHub: @Mehraz2
