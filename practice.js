@@ -2018,13 +2018,50 @@
 
 
 
+// console.log("A");
+
+// setTimeout(function () {
+//     console.log("B");
+// }, 3000);
+
+// console.log("C");
+
+
+
+
+
+// console.log("Start");
+
+// setTimeout(function () {
+//     console.log("Middle");
+    
+// }, 2000);
+
+
+// console.log("End");
+
+
+
+
+
+
+
+
 console.log("A");
 
-setTimeout(function () {
+
+console.log(function () {
     console.log("B");
+    
 }, 3000);
 
-console.log("C");
+
+setTimeout(function (){
+    console.log("C");
+    
+}, 1000);
+
+console.log("D");
 
 
 
@@ -2036,19 +2073,17 @@ console.log("C");
 
 
 
+// console.log("A");
 
+// setTimeout(function () {
+//     console.log("B");
+// }, 3000);
 
+// setTimeout(function () {
+//     console.log("C");
+// }, 1000);
 
-
-
-
-
-
-
-
-
-
-
+// console.log("D");
 
 
 
