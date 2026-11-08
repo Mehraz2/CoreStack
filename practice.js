@@ -2047,21 +2047,21 @@
 
 
 
-console.log("A");
+// console.log("A");
 
 
-console.log(function () {
-    console.log("B");
+// console.log(function () {
+//     console.log("B");
     
-}, 3000);
+// }, 3000);
 
 
-setTimeout(function (){
-    console.log("C");
+// setTimeout(function (){
+//     console.log("C");
     
-}, 1000);
+// }, 1000);
 
-console.log("D");
+// console.log("D");
 
 
 
@@ -2097,7 +2097,7 @@ console.log("D");
 
 
 
-
+console.log("Hello Backend!");
 
 
 

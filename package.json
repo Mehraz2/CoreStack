@@ -1,0 +1,25 @@
+{
+  "name": "corestack",
+  "version": "1.0.0",
+  "description": "<!-- # CoreStack\r Building a strong backend foundation through JavaScript, Node.js, Express.js, MongoDB, and GitHub.",
+  "keywords": [
+    "backend",
+    "nodejs",
+    "javascript"
+  ],
+  "homepage": "https://github.com/Mehraz2/CoreStack#readme",
+  "bugs": {
+    "url": "https://github.com/Mehraz2/CoreStack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mehraz2/CoreStack.git"
+  },
+  "license": "ISC",
+  "author": "Mehraz",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
