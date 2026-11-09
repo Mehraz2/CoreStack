@@ -1952,6 +1952,9 @@ API এবং Fetch
 
 
 
+<!-- ===================================================================== -->
+<!-- ====================================================================== -->
+<!-- ======================================================================= -->
 
 
 
@@ -1961,8 +1964,102 @@ API এবং Fetch
 
 
 
+Node.js — File System (fs) Module
 
+১. File System কী?
 
+Node.js-এর File System বা fs module দিয়ে কম্পিউটারের file নিয়ে কাজ করা যায়।
+
+যেমন:
+
+নতুন file তৈরি করা
+
+File-এর মধ্যে লেখা
+
+File থেকে data পড়া
+
+File delete করা
+
+২. fs Module ব্যবহার
+
+প্রথমে Node.js-এর built-in fs module import করতে হয়।
+
+const fs = require('fs');
+
+ব্যাখ্যা:
+
+require('fs') — Node.js-এর File System module load করে।
+
+fs — module-টিকে ব্যবহারের জন্য রাখা variable।
+
+fs আলাদা করে install করতে হয় না। Node.js-এর সঙ্গেই থাকে।
+
+৩. fs.writeFile()
+
+fs.writeFile() দিয়ে নতুন file তৈরি করা এবং file-এর মধ্যে text লেখা যায়।
+
+Example:
+
+const fs = require('fs');
+
+fs.writeFile("hey.txt", "yahh, i am good", function(err) {
+    if (err) console.log(err);
+    else console.log("done");
+});
+
+Code Explanation:
+
+"hey.txt" — যে file-এ লিখব তার নাম।
+
+"yahh, i am good" — file-এর মধ্যে যে text লিখব।
+
+function(err) — কাজ করার সময় কোনো error হলে সেটি পাওয়া যায়।
+
+if (err) — error থাকলে error দেখাবে।
+
+else — error না থাকলে done দেখাবে।
+
+৪. গুরুত্বপূর্ণ বিষয়: পুরোনো লেখা পরিবর্তন
+
+ধরো, hey.txt-এর মধ্যে আগে লেখা ছিল:
+
+hey, hello, whats up
+
+এখন লিখলাম:
+
+fs.writeFile("hey.txt", "yahh, i am good", function(err) {
+    if (err) console.log(err);
+    else console.log("done");
+});
+
+এবার hey.txt-এর আগের লেখা replace হয়ে নতুন লেখা হবে:
+
+yahh, i am good
+
+মনে রাখবে: fs.writeFile() একই file-এ নতুন content লিখলে defaultভাবে আগের content replace করে দেয়।
+
+৫. File-এর নাম আলাদা হলে
+
+fs.writeFile("hello.txt", "Hello World", function(err) {
+    if (err) console.log(err);
+    else console.log("done");
+});
+
+এখানে hello.txt নামে নতুন file তৈরি হবে। আগের hey.txt পরিবর্তন হবে না।
+
+৬. আজ যা শিখেছি
+
+Node.js-এর fs module কী।
+
+require('fs') দিয়ে module load করা।
+
+fs.writeFile() দিয়ে file তৈরি ও লেখা।
+
+Callback function এবং err কীভাবে কাজ করে।
+
+একই file-এ নতুন content লিখলে আগের content replace হয়।
+
+Next Topic: fs.readFile() — File থেকে data পড়া।
 
 
 
