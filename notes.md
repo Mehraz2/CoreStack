@@ -2072,8 +2072,182 @@ Next Topic: fs.readFile() — File থেকে data পড়া।
 
 
 
+<!-- ------------------------------------------------------ -->
 
 
+
+Node.js File System — fs.rename()
+
+1. What is File System (fs)?
+
+Node.js-এর File System Module ব্যবহার করে আমরা কম্পিউটারের ফাইল নিয়ে কাজ করতে পারি।
+
+যেমন:
+
+File তৈরি করা
+
+File-এর মধ্যে লেখা
+
+File পড়া
+
+File-এর নাম পরিবর্তন করা
+
+File Delete করা
+
+File System Module ব্যবহার করতে:
+
+const fs = require("fs");
+
+এখানে:
+
+fs হলো File System Module-এর একটি variable।
+
+require("fs") দিয়ে Node.js-এর built-in File System Module আনা হয়।
+
+2. What is fs.rename()?
+
+fs.rename() ব্যবহার করে কোনো ফাইলের নাম পরিবর্তন করা যায়।
+
+Syntax
+
+fs.rename(oldPath, newPath, callback);
+
+এখানে:
+
+oldPath → ফাইলের বর্তমান নাম।
+
+newPath → ফাইলের নতুন নাম।
+
+callback → কাজ শেষ হলে যে function চালু হবে।
+
+Example
+
+const fs = require("fs");
+
+fs.rename("hey.txt", "hello.txt", function(err) {
+    if (err) console.error(err);
+    else console.log("done");
+});
+
+Explanation
+
+fs.rename("hey.txt", "hello.txt", ...)
+
+এখানে Node.js-কে বলা হচ্ছে:
+
+hey.txt ফাইলের নাম পরিবর্তন করে hello.txt করো।
+
+যদি কাজ সফল হয়:
+
+console.log("done");
+
+Output:
+
+done
+
+3. What is err?
+
+err হলো callback function-এর একটি parameter।
+
+কোনো সমস্যা হলে Node.js এই parameter-এর মধ্যে Error-এর তথ্য পাঠায়।
+
+function(err) {
+    if (err) console.error(err);
+    else console.log("done");
+}
+
+এখানে:
+
+if (err) → কোনো Error আছে কি না পরীক্ষা করে।
+
+console.error(err) → Error দেখায়।
+
+else → Error না থাকলে চলে।
+
+console.log("done") → কাজ সফল হলে done দেখায়।
+
+সহজভাবে
+
+Condition
+
+Result
+
+কাজ সফল
+
+err হলো null
+
+কাজ ব্যর্থ
+
+err-এর মধ্যে Error Object থাকে
+
+4. Example of Error
+
+ধরো, abc.txt নামে কোনো ফাইল নেই।
+
+const fs = require("fs");
+
+fs.rename("abc.txt", "hello.txt", function(err) {
+    if (err) console.error(err);
+    else console.log("done");
+});
+
+এখানে abc.txt পাওয়া যাবে না।
+
+তাই Error আসবে।
+
+Error Code: ENOENT
+
+ENOENT: no such file or directory
+
+এর অর্থ:
+
+যে ফাইল বা Directory খোঁজা হচ্ছে, সেটি পাওয়া যায়নি।
+
+উদাহরণ:
+
+rename 'D:\CoreStack\hey.txt' -> 'D:\CoreStack\hello.txt'
+
+এখানে Node.js hey.txt খুঁজেছে, কিন্তু ফাইলটি না থাকায় Rename করতে পারেনি।
+
+5. Important Difference
+
+fs.writeFile()
+
+fs.writeFile("hey.txt", "Hello", function(err) {
+    if (err) console.error(err);
+    else console.log("done");
+});
+
+এটি ফাইল তৈরি করে বা ফাইলের মধ্যে লেখা সংরক্ষণ করে।
+
+fs.rename()
+
+fs.rename("hey.txt", "hello.txt", function(err) {
+    if (err) console.error(err);
+    else console.log("done");
+});
+
+এটি ফাইলের নাম পরিবর্তন করে।
+
+মনে রাখবে: fs.rename() নতুন নামে ফাইল তৈরি করে নাম পরিবর্তন করে। এটি ফাইলের ভেতরের লেখা পরিবর্তন করার জন্য নয়।
+
+6. Summary
+
+fs → File System Module।
+
+require("fs") → Module-টি ব্যবহার করার জন্য আনে।
+
+fs.writeFile() → ফাইল তৈরি বা লেখা সংরক্ষণ করে।
+
+fs.rename() → ফাইলের নাম পরিবর্তন করে।
+
+err → কোনো সমস্যা হলে Error-এর তথ্য রাখে।
+
+ENOENT → ফাইল বা Directory পাওয়া যায়নি।
+
+console.error(err) → Error দেখায়।
+
+console.log("done") → কাজ সফল হলে দেখায়।
 
 
 
