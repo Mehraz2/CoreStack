@@ -2101,32 +2101,45 @@
 
 
 
-const fs = require('fs');
+// const fs = require('fs');
 
-fs.writeFile("hey.txt", "yahh, i am good", function(err) {
-    if (err) console.log(err);
-    else console.log("done");
-});
-
-
+// fs.writeFile("hey.txt", "yahh, i am good", function(err) {
+//     if (err) console.log(err);
+//     else console.log("done");
+// });
 
 
+// const fs = require("fs");
 
-
-
-
-
-
+// fs.rename("hey.txt", "hello.txt", function(err) {
+//     if (err) console.error(err);
+//     else console.log("done");
+// });
 
 
 
 
 
+// err
+// fs.rename("abc.txt", "new.txt", function(err) {
+//     if (err) console.error(err);
+//     else console.log("done");
+// });
 
 
 
 
 
+
+
+
+// done
+const fs = require("fs");
+
+fs.writeFile("hey.txt", "Hello", function(err) {
+    if (err) console.error(err);
+    else console.log("File created!");
+}); ``
 
 
 
