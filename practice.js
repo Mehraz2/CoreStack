@@ -2134,22 +2134,28 @@
 
 
 // done
+// const fs = require("fs");
+
+// fs.writeFile("hey.txt", "Hello", function(err) {
+//     if (err) console.error(err);
+//     else console.log("File created!");
+// }); ``
+
+
+
+
+
+
+
+
+
+// copy file
 const fs = require("fs");
 
-fs.writeFile("hey.txt", "Hello", function(err) {
+fs.copyFile("hello.txt", "./copy/chacha.txt", function(err) {
     if (err) console.error(err);
-    else console.log("File created!");
-}); ``
-
-
-
-
-
-
-
-
-
-
+    else console.log("done");
+});
 
 
 
