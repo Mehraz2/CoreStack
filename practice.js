@@ -2161,20 +2161,28 @@
 
 
 
+// copy file
+// const fs = require("fs");
 
-const fs = require("fs");
-
-fs.copyFile("hello.txt", "./copy2/chacha.txt", function(err) {
-    if (err) console.error(err);
-    else console.log("done");
-});
-
-
+// fs.copyFile("hello.txt", "./copy2/chacha.txt", function(err) {
+//     if (err) console.error(err);
+//     else console.log("done");
+// });
 
 
 
 
 
+
+// delet file
+const fs = require('fs');
+
+fs.unlink("hello.txt", function(err){
+    if(err)console.error(err);
+    else console.log("removet");
+    
+    
+})
 
 
 
