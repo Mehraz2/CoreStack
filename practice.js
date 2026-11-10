@@ -2150,18 +2150,24 @@
 
 
 // copy file
+// const fs = require("fs");
+
+// fs.copyFile("hello.txt", "./copy/chacha.txt", function(err) {
+//     if (err) console.error(err);
+//     else console.log("done");
+// });
+
+
+
+
+
+
 const fs = require("fs");
 
-fs.copyFile("hello.txt", "./copy/chacha.txt", function(err) {
+fs.copyFile("hello.txt", "./copy2/chacha.txt", function(err) {
     if (err) console.error(err);
     else console.log("done");
 });
-
-
-
-
-
-
 
 
 
