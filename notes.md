@@ -2251,26 +2251,258 @@ console.log("done") → কাজ সফল হলে দেখায়।
 
 
 
+<!-- ======================================== -->
+<!-- ======================================== -->
+<!-- ======================================== -->
+<!-- ======================================== -->
 
 
 
 
 
+JavaScript & Node.js — Learning Notes
 
+Part 1: JavaScript Fundamentals
 
+1. Variables
 
+Variable হলো Data রাখার জায়গা।
 
+var — পুরোনো পদ্ধতিতে Variable তৈরি।
 
+let — Value পরিবর্তন করা যায়।
 
+const — নতুন করে Value Assign করা যায় না।
 
+let score = 50;
+score = 80;
 
+const name = "Mehraz";
 
+2. Data Types
 
+Data-এর বিভিন্ন ধরনকে Data Type বলে।
 
+String — Text: "Hello"
 
+Number — সংখ্যা: 25
 
+Boolean — true অথবা false
 
+Undefined — Value দেওয়া হয়নি।
 
+3. Conditions
+
+কোনো শর্ত সত্য না মিথ্যা, তা যাচাই করে।
+
+let age = 20;
+
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Not Adult");
+}
+
+if — শর্ত পরীক্ষা করে।
+
+else — শর্ত পূরণ না হলে চলে।
+
+>= — বড় অথবা সমান।
+
+=== — Value ও Data Type দুটোই পরীক্ষা করে।
+
+! — বিপরীত Boolean Result দেয়।
+
+4. Arrays
+
+একটি Variable-এর মধ্যে একাধিক Value রাখা যায়।
+
+let arr = [1, 2, 3, 4];
+
+5. Array Methods
+
+forEach() — Array-এর প্রতিটি Element নিয়ে কাজ করে।
+
+map() — প্রতিটি Element পরিবর্তন করে নতুন Array তৈরি করে।
+
+filter() — শর্ত অনুযায়ী Element বেছে নতুন Array তৈরি করে।
+
+find() — শর্ত মেনে প্রথম Element খুঁজে দেয়।
+
+indexOf() — কোনো Element-এর Index খুঁজে দেয়। না পেলে -1 দেয়।
+
+6. Objects
+
+একটি Object-এর মধ্যে Property ও Value রাখা যায়।
+
+let user = {
+    name: "Mehraz",
+    age: 20
+};
+
+7. Functions
+
+একটি নির্দিষ্ট কাজ করার জন্য Code Block তৈরি করা হয়।
+
+function add() {
+    return 10 + 20;
+}
+
+let result = add();
+console.log(result);
+
+function — Function তৈরি করে।
+
+return — Function থেকে Result ফেরত দেয়।
+
+Part 2: Asynchronous JavaScript
+
+8. Synchronous JavaScript
+
+Code সাধারণত একটির পর একটি Line অনুযায়ী Execute হয়।
+
+9. Asynchronous JavaScript
+
+কিছু কাজ শেষ হতে সময় লাগে। যেমন API থেকে Data আনা। JavaScript এসব কাজের জন্য অপেক্ষা না করে অন্য কাজ চালাতে পারে।
+
+10. Callback Function
+
+একটি Function-এর Argument হিসেবে অন্য Function পাঠানোকে Callback বলে।
+
+function greet(callback) {
+    callback();
+}
+
+greet(function() {
+    console.log("Hello");
+});
+
+11. async / await
+
+Asynchronous কাজকে সহজভাবে লেখার পদ্ধতি।
+
+async — Function-কে Async Function বানায়।
+
+await — একটি Promise-এর Result পাওয়ার জন্য অপেক্ষা করে।
+
+12. Fetch API
+
+Internet থেকে API-এর মাধ্যমে Data আনার জন্য fetch() ব্যবহার করা হয়।
+
+async function getData() {
+    let response = await fetch("https://randomuser.me/api/");
+    let data = await response.json();
+
+    console.log(data);
+}
+
+fetch() — API Request পাঠায়।
+
+response.json() — JSON Data-তে Convert করে।
+
+await — Promise-এর Result আসা পর্যন্ত অপেক্ষা করে।
+
+Part 3: Node.js Basics
+
+13. Node.js কী?
+
+Node.js হলো JavaScript Runtime Environment। এটি Browser-এর বাইরে Computer বা Server-এ JavaScript চালাতে সাহায্য করে।
+
+14. Node REPL
+
+Terminal-এ node লিখে সরাসরি JavaScript Code চালানো যায়। এটিকে REPL বলে।
+
+node
+
+REPL থেকে বের হতে:
+
+.exit
+
+15. JavaScript File Run করা
+
+node practice.js
+
+এই Command দিয়ে practice.js File-এর JavaScript Code Execute হয়।
+
+16. require()
+
+অন্য Module বা Built-in Module নিজের Code-এ ব্যবহার করার জন্য require() ব্যবহার করা হয়।
+
+const fs = require("fs");
+
+এখানে fs হলো Node.js-এর Built-in File System Module। আলাদা করে Install করতে হয় না।
+
+Part 4: Node.js File System (fs)
+
+File ও Folder নিয়ে কাজ করার জন্য fs Module ব্যবহার করা হয়।
+
+17. fs.writeFile()
+
+নতুন File তৈরি করে এবং তার মধ্যে Content লেখে। File আগে থাকলে পুরোনো Content Replace করে।
+
+fs.writeFile("hey.txt", "Hello", callback);
+
+18. fs.rename()
+
+File বা Folder-এর নাম পরিবর্তন করে। অন্য জায়গায় Move-ও করতে পারে।
+
+fs.rename("hey.txt", "hello.txt", callback);
+
+19. fs.copyFile()
+
+একটি File-এর Copy তৈরি করে। Original File Delete হয় না।
+
+fs.copyFile("hello.txt", "./copy/chacha.txt", callback);
+
+20. fs.unlink()
+
+File Delete করে।
+
+fs.unlink("hello.txt", callback);
+
+21. fs.rmdir()
+
+Empty Folder Delete করে।
+
+fs.rmdir("./copy", callback);
+
+22. fs.rm()
+
+File অথবা Folder Delete করে।
+
+fs.rm("./copy", { recursive: true }, callback);
+
+recursive: true দিলে Folder-এর ভিতরের File ও Subfolder-সহ Delete করা যায়।
+
+Part 5: Error Handling
+
+23. Error Handling কী?
+
+Code Execute করার সময় কোনো সমস্যা হলে সেটি Handle করার পদ্ধতি।
+
+fs.writeFile("hey.txt", "Hello", function(err) {
+    if (err) {
+        console.error(err);
+    } else {
+        console.log("Done");
+    }
+});
+
+err — কোনো Error হয়েছে কি না পরীক্ষা করে।
+
+if (err) — Error থাকলে চলে।
+
+else — Error না থাকলে চলে।
+
+console.error() — Error দেখায়।
+
+24. Common Error: ENOENT
+
+কোনো File বা Folder খুঁজে না পেলে সাধারণত ENOENT Error আসে।
+
+25. Common Error: ENOTEMPTY
+
+কোনো Folder-এর ভিতরে File বা Subfolder থাকলে fs.rmdir() দিয়ে Delete করতে গেলে এই Error আসতে পারে।
 
 
 
