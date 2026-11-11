@@ -2175,14 +2175,44 @@
 
 
 // delet file
-const fs = require('fs');
+// const fs = require('fs');
 
-fs.unlink("hello.txt", function(err){
-    if(err)console.error(err);
-    else console.log("removet");
+// fs.unlink("hello.txt", function(err){
+//     if(err)console.error(err);
+//     else console.log("removet");
     
     
-})
+// })
+
+
+
+
+
+
+// Folder (Directory) Delete
+const fs = require("fs");
+
+fs.rmdir("./copy", function(err) {
+    if (err) console.error(err);
+    else console.log("removed");
+});
+
+
+// এখানে বোঝাচ্ছে Node.js copy Folder-টি Delete করার চেষ্টা করেছে, 
+// কিন্তু পারেনি।
+
+// কারণ  copy Folder-এর ভিতরে chacha.txt ফাইল আছে। 
+// আর fs.rmdir() দিয়ে non-empty folder Delete করা যায় না।
+
+// এজন্য ENOTEMPTY Error এসেছে।
+// এবার ছোট্ট একটা কাজ
+// প্রথমে copy Folder-এর ভিতরের chacha.txt Delete kori:
+
+
+// fs.unlink("./copy/chacha.txt", function(err) {
+//     if (err) console.error(err);
+//     else console.log("File Deleted");
+// });
 
 
 
@@ -2191,11 +2221,10 @@ fs.unlink("hello.txt", function(err){
 
 
 
-
-
-
-
-
+fs.rm("./copy/", {recursive: true} , function(err) {
+    if (err) console.error(err);
+    else console.log("File Deleted");
+});
 
 
 
