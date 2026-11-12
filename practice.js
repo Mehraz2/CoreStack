@@ -2221,10 +2221,10 @@ fs.rmdir("./copy", function(err) {
 
 
 
-fs.rm("./copy/", {recursive: true} , function(err) {
-    if (err) console.error(err);
-    else console.log("File Deleted");
-});
+// fs.rm("./copy/", {recursive: true} , function(err) {
+//     if (err) console.error(err);
+//     else console.log("File Deleted");
+// });
 
 
 
