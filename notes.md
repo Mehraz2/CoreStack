@@ -2328,3 +2328,77 @@ console.error() — Error দেখায়।
 25. Common Error: ENOTEMPTY
 
 কোনো Folder-এর ভিতরে File বা Subfolder থাকলে fs.rmdir() দিয়ে Delete করতে গেলে এই Error আসতে পারে।
+
+
+
+
+
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+
+
+
+# HTTP (HyperText Transfer Protocol)
+
+### 1. HTTP কী?
+HTTP হলো একটি Protocol, যার মাধ্যমে Client ও Server-এর মধ্যে Data আদান-প্রদান হয়।
+
+### 2. Client কী?
+যে Browser বা Application Server-এর কাছে Request পাঠায়, তাকে Client বলে।
+
+### 3. Server কী?
+যে Client-এর Request গ্রহণ করে এবং Response পাঠায়, তাকে Server বলে।
+
+### 4. Request কী?
+Client যখন Server-এর কাছে কোনো Data চায় বা Data পাঠায়, সেটি Request।
+
+### 5. Response কী?
+Server যখন Client-এর Request-এর উত্তর পাঠায়, সেটি Response।
+
+### 6. HTTP Methods
+
+- `GET` — Server থেকে Data নেওয়া।
+- `POST` — নতুন Data পাঠানো।
+- `PUT` — সম্পূর্ণ Data Update করা।
+- `PATCH` — Data-এর নির্দিষ্ট অংশ Update করা।
+- `DELETE` — Data Delete করার Request পাঠানো।
+
+### 7. HTTP Status Codes
+
+- `200` — OK (Request সফল)
+- `201` — Created (নতুন Data তৈরি হয়েছে)
+- `400` — Bad Request
+- `401` — Unauthorized
+- `404` — Not Found
+- `500` — Internal Server Error
+
+### 8. HTTP কীভাবে কাজ করে?
+
+1. Client Server-এর কাছে Request পাঠায়।
+2. Server Request গ্রহণ করে।
+3. Server প্রয়োজনীয় কাজ করে।
+4. Server Client-এর কাছে Response পাঠায়।
+
+### 9. HTTPS কী?
+HTTPS হলো HTTP-এর Secure Version। এটি TLS Encryption ব্যবহার করে Client ও Server-এর মধ্যে Data নিরাপদে আদান-প্রদান করতে সাহায্য করে।
+
+---
+
+### মনে রাখবে
+
+- HTTP = Communication Protocol
+- Request = Client থেকে Server
+- Response = Server থেকে Client
+- Method = কী ধরনের কাজ করতে চাই
+- Status Code = Request-এর ফলাফল
+
+
+
+
+
+
+
+
+
