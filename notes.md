@@ -2396,9 +2396,73 @@ HTTPS হলো HTTP-এর Secure Version। এটি TLS Encryption ব্য
 
 
 
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+
+<!-- =========================================================== -->
 
 
+Node.js File System (fs) Module
 
+1. fs.readFile()
 
+fs.readFile() ব্যবহার করা হয় কোনো ফাইলের ভেতরের লেখা পড়ার জন্য।
 
+Example:
+
+const fs = require("fs");
+
+fs.readFile("hello.txt", "utf8", function(err, data) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(data);
+    }
+});
+
+কীভাবে কাজ করে:
+
+require("fs") দিয়ে File System module যুক্ত করা হয়।
+
+readFile() দিয়ে ফাইল পড়া হয়।
+
+"hello.txt" হলো যে ফাইলটি পড়তে চাই তার নাম।
+
+"utf8" ব্যবহার করলে ফাইলের লেখা সাধারণ Text হিসেবে দেখা যায়।
+
+err কোনো সমস্যা হলে Error দেখায়।
+
+data ফাইলের ভেতরের লেখা গ্রহণ করে।
+
+মনে রাখবে: readFile() শুধু ফাইলের লেখা পড়ে, ফাইলের লেখা পরিবর্তন করে না।
+
+2. fs.appendFile()
+
+fs.appendFile() ব্যবহার করা হয় কোনো ফাইলের পুরোনো লেখা ঠিক রেখে তার শেষে নতুন লেখা যোগ করার জন্য।
+
+Example:
+
+const fs = require("fs");
+
+fs.appendFile("hello.txt", "\nI love JS", function(err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("File Updated");
+    }
+});
+
+কীভাবে কাজ করে:
+
+appendFile() দিয়ে ফাইলের শেষে নতুন লেখা যোগ করা হয়।
+
+"hello.txt" হলো যে ফাইলে লেখা যোগ করতে চাই তার নাম।
+
+"\nI love JS" হলো নতুন যে লেখাটি যোগ হবে।
+
+\n ব্যবহার করলে নতুন লাইন তৈরি হয়।
+
+err কোনো সমস্যা হলে Error দেখায়।
+
+কাজ সফল হলে "File Updated" দেখায়।
 
