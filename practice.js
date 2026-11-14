@@ -2237,17 +2237,111 @@
 // fs.readFile() দিয়ে আমরা কোনো File-এর ভিতরে থাকা data পড়তে পারি।
 
 
+// const fs = require("fs");
+
+// fs.readFile("hello.txt", "utf8", function(err, data){
+//     if (err) {
+//         console.log(err);
+        
+//     } else {
+//         console.log(data);
+        
+//     }
+// })
+
+
+
+
+
+
+// const fileSystem = require("fs");
+
+// fileSystem.readFile("hello.txt", "utf8", function(err, data) {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log(data);
+//     }
+// });
+
+
+
+
+
+
+
+// function(error, data) {
+//     if (error) {
+//         console.log(error);
+//     }
+
+// }   
+
+
+
+
+
+
+
+
+// const fileSystem = require("fs");
+
+// fileSystem.readFile("hello.txt", "utf8", function(error, data) {
+//     if (error) {
+//         console.log(error);
+//     } else {
+//         console.log(data);
+//     }
+// });
+
+
+
+
+
+
+// fs.appendFile() দিয়ে কোনো File-এর ভিতরে নতুন লেখা যোগ করা যায়।
 const fs = require("fs");
 
-fs.readFile("hello.txt", "utf8", function(err, data){
+fs.appendFile("hello.txt", "\nI love JS", function(err) {
     if (err) {
         console.log(err);
-        
     } else {
-        console.log(data);
-        
+        console.log("File Updated");
     }
-})
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
