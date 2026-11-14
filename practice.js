@@ -2189,13 +2189,13 @@
 
 
 
-// Folder (Directory) Delete
-const fs = require("fs");
+// // Folder (Directory) Delete
+// const fs = require("fs");
 
-fs.rmdir("./copy", function(err) {
-    if (err) console.error(err);
-    else console.log("removed");
-});
+// fs.rmdir("./copy", function(err) {
+//     if (err) console.error(err);
+//     else console.log("removed");
+// });
 
 
 // এখানে বোঝাচ্ছে Node.js copy Folder-টি Delete করার চেষ্টা করেছে, 
@@ -2234,9 +2234,20 @@ fs.rmdir("./copy", function(err) {
 
 
 
+// fs.readFile() দিয়ে আমরা কোনো File-এর ভিতরে থাকা data পড়তে পারি।
 
 
+const fs = require("fs");
 
+fs.readFile("hello.txt", "utf8", function(err, data){
+    if (err) {
+        console.log(err);
+        
+    } else {
+        console.log(data);
+        
+    }
+})
 
 
 
