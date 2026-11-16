@@ -2339,27 +2339,35 @@ const { log } = require("console");
 // 5. fs.copyFile()
 // কাজ: একটি ফাইলের Copy তৈরি করার জন্য fs.copyFile() ব্যবহার করা হয়।
 
+// const fs = require("fs");
+
+// fs.mkdir("myfolder", function(err) {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log("Folder Created!");
+//     }
+// });
+
+
+
+
+
+
+
+
+// Topic 9: fs.stat()
+// কাজ: কোনো File বা Folder সম্পর্কে বিস্তারিত তথ্য জানার জন্য fs.stat() ব্যবহার করা হয়।
+
 const fs = require("fs");
 
-fs.mkdir("myfolder", function(err) {
+fs.stat("hey.txt", function(err, stats) {
     if (err) {
         console.log(err);
     } else {
-        console.log("Folder Created!");
+        console.log(stats.size);
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
