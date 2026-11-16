@@ -2546,3 +2546,41 @@ fs.mkdir("backend", function(err) {
 - কাজ সফল হলে `"Backend Folder Created!"` দেখায়।
 
 **মনে রাখবে:** `mkdir()` দিয়ে Folder তৈরি হয়, কোনো File তৈরি হয় না। একই নামে Folder আগে থেকেই থাকলে Error আসতে পারে।
+
+
+
+<!-- ================================================= ==================== -->
+
+# Node.js File System (fs) Module
+
+## fs.stat()
+
+`fs.stat()` ব্যবহার করা হয় কোনো File বা Folder সম্পর্কে বিস্তারিত তথ্য জানার জন্য।
+
+**Example:**
+```js
+const fs = require("fs");
+
+fs.stat("newfile.txt", function(err, stats) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(stats.size);
+    }
+});
+```
+
+**কীভাবে কাজ করে:**
+
+- `fs.stat()` → File বা Folder-এর তথ্য বের করে।
+- `"newfile.txt"` → যে File বা Folder-এর তথ্য জানতে চাই।
+- `err` → কোনো সমস্যা হলে Error দেখায়।
+- `stats` → File বা Folder-এর বিস্তারিত তথ্য রাখে।
+- `stats.size` → File-এর Size Byte-এ দেখায়।
+
+**আরও কিছু গুরুত্বপূর্ণ Method:**
+
+- `stats.isFile()` → এটি File কি না পরীক্ষা করে।
+- `stats.isDirectory()` → এটি Folder কি না পরীক্ষা করে।
+
+**মনে রাখবে:** `stats.size` Word Count নয়, এটি File-এর মোট Size Byte-এ প্রকাশ করে।
