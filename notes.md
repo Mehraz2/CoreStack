@@ -2506,3 +2506,43 @@ fs.rename("hello.txt", "newfile.txt", function(err) {
 - কাজ সফল হলে `"File Renamed!"` দেখায়।
 
 **মনে রাখবে:** `fs.rename()` পুরোনো ফাইলের নাম পরিবর্তন করে নতুন নাম দেয়। এটি আলাদা Copy তৈরি করে না।
+
+
+
+
+
+
+
+
+
+<!-- ======================================== -->
+
+
+
+# Node.js File System (fs) Module
+
+## fs.mkdir()
+
+`fs.mkdir()` ব্যবহার করা হয় Node.js দিয়ে নতুন Folder তৈরি করার জন্য।
+
+**Example:**
+```js
+const fs = require("fs");
+
+fs.mkdir("backend", function(err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("Backend Folder Created!");
+    }
+});
+```
+
+**কীভাবে কাজ করে:**
+
+- `fs.mkdir()` → নতুন Folder তৈরি করে।
+- `"backend"` → নতুন Folder-এর নাম।
+- `err` → কোনো সমস্যা হলে Error দেখায়।
+- কাজ সফল হলে `"Backend Folder Created!"` দেখায়।
+
+**মনে রাখবে:** `mkdir()` দিয়ে Folder তৈরি হয়, কোনো File তৈরি হয় না। একই নামে Folder আগে থেকেই থাকলে Error আসতে পারে।
