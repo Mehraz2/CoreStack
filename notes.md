@@ -2466,3 +2466,43 @@ err কোনো সমস্যা হলে Error দেখায়।
 
 কাজ সফল হলে "File Updated" দেখায়।
 
+
+
+
+
+
+
+
+
+
+<!-- =========================================== -->
+
+
+# Node.js File System (fs) Module
+
+## fs.rename()
+
+`fs.rename()` ব্যবহার করা হয় কোনো ফাইলের নাম পরিবর্তন করার জন্য।
+
+**Example:**
+```js
+const fs = require("fs");
+
+fs.rename("hello.txt", "newfile.txt", function(err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("File Renamed!");
+    }
+});
+```
+
+**কীভাবে কাজ করে:**
+
+- `fs.rename()` → ফাইলের নাম পরিবর্তন করে।
+- `"hello.txt"` → ফাইলের পুরোনো নাম।
+- `"newfile.txt"` → ফাইলের নতুন নাম।
+- `err` → কোনো সমস্যা হলে Error দেখায়।
+- কাজ সফল হলে `"File Renamed!"` দেখায়।
+
+**মনে রাখবে:** `fs.rename()` পুরোনো ফাইলের নাম পরিবর্তন করে নতুন নাম দেয়। এটি আলাদা Copy তৈরি করে না।
