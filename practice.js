@@ -2319,27 +2319,35 @@ const { log } = require("console");
 // কাজ: কোনো ফাইলের নাম পরিবর্তন করার জন্য fs.rename() ব্যবহার করা হয়।
 
 
+// const fs = require("fs");
+
+// fs.rename("hello.txt", "newfile.txt", function(err){
+//     if(err) {
+//         console.log(err);
+//     } else {
+//         console.log("file Renamed!");
+        
+//     }
+// })
+
+
+
+
+
+
+
+// 5. fs.copyFile()
+// কাজ: একটি ফাইলের Copy তৈরি করার জন্য fs.copyFile() ব্যবহার করা হয়।
+
 const fs = require("fs");
 
-fs.rename("hello.txt", "newfile.txt", function(err){
-    if(err) {
+fs.mkdir("myfolder", function(err) {
+    if (err) {
         console.log(err);
     } else {
-        console.log("file Renamed!");
-        
+        console.log("Folder Created!");
     }
-})
-
-
-
-
-
-
-
-
-
-
-
+});
 
 
 
