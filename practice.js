@@ -1423,6 +1423,7 @@
 
 
 
+const { log } = require("console");
 // =============================================================================================================
 
 
@@ -2300,22 +2301,34 @@
 
 
 // fs.appendFile() দিয়ে কোনো File-এর ভিতরে নতুন লেখা যোগ করা যায়।
+// const fs = require("fs");
+
+// fs.appendFile("hello.txt", "\nI love JS", function(err) {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log("File Updated");
+//     }
+// });
+
+
+
+
+
+// 4. fs.rename()
+// কাজ: কোনো ফাইলের নাম পরিবর্তন করার জন্য fs.rename() ব্যবহার করা হয়।
+
+
 const fs = require("fs");
 
-fs.appendFile("hello.txt", "\nI love JS", function(err) {
-    if (err) {
+fs.rename("hello.txt", "newfile.txt", function(err){
+    if(err) {
         console.log(err);
     } else {
-        console.log("File Updated");
+        console.log("file Renamed!");
+        
     }
-});
-
-
-
-
-
-
-
+})
 
 
 
