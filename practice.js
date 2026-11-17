@@ -2359,17 +2359,15 @@ const { log } = require("console");
 // Topic 9: fs.stat()
 // কাজ: কোনো File বা Folder সম্পর্কে বিস্তারিত তথ্য জানার জন্য fs.stat() ব্যবহার করা হয়।
 
-const fs = require("fs");
+// const fs = require("fs");
 
-fs.stat("hey.txt", function(err, stats) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log(stats.size);
-    }
-});
-
-
+// fs.stat("hey.txt", function(err, stats) {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log(stats.size);
+//     }
+// });
 
 
 
@@ -2377,10 +2375,32 @@ fs.stat("hey.txt", function(err, stats) {
 
 
 
+// const http = require('http') ;
+
+
+// const server = http.createServer(function (req, res) {
+
+//     res.end("hello world");
+// })
+
+
+// server.listen(3000);
 
 
 
 
+
+
+const http = require('http') ;
+
+
+const server = http.createServer(function (req, res) {
+
+    res.end("My name is Mehraz. I am learning Backend Development.");
+})
+
+
+server.listen(3000);
 
 
 
