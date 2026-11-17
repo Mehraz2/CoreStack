@@ -2391,16 +2391,156 @@ const { log } = require("console");
 
 
 
-const http = require('http') ;
+// const http = require('http') ;
 
 
-const server = http.createServer(function (req, res) {
+// const server = http.createServer(function (req, res) {
 
-    res.end("My name is Mehraz. I am learning Backend Development.");
-})
+//     res.end("My name is Mehraz. I am learning Backend Development.");
+// })
 
 
-server.listen(3000);
+// server.listen(3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const express = require('express');
+
+const app = express();
+
+app.get('/', function(req, res) {
+    res.send('Hello Mehraz!');
+});
+
+app.listen(3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
