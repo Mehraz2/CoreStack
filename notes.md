@@ -2636,11 +2636,48 @@ server.listen(3000);
 
 
 
+<!-- ====================================================================== -->
 
 
 
+## Nodemon (Short Note)
 
+**Nodemon** হলো Node.js-এর একটি development tool, যা কোড পরিবর্তন করে Save দিলে automatically server restart করে।
 
+### কেন ব্যবহার করি?
+- বারবার `node app.js` লিখতে হয় না।
+- কোড Save করলেই automatically restart হয়।
+- Development-এর সময় সময় বাঁচায়।
+
+### Install
+```bash
+npm i nodemon --save-dev
+```
+
+### সরাসরি চালানো
+```bash
+npx nodemon app.js
+```
+
+### package.json দিয়ে চালানো
+
+```json
+"scripts": {
+  "dev": "nodemon app.js"
+}
+```
+
+চালানোর command:
+```bash
+npm run dev
+```
+
+### মনে রাখবে
+- `node app.js` → সাধারণভাবে Node.js চালায়।
+- `npx nodemon app.js` → Nodemon দিয়ে চালায়।
+- `npm run dev` → package.json-এর `dev` script চালায়।
+
+**মূল কথা:** Nodemon development-এর সময় কোড পরিবর্তন হলে automatically restart করে।
 
 
 
