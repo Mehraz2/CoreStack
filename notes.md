@@ -2686,12 +2686,43 @@ npm run dev
 
 
 
+<!-- ======================================================================== -->
 
 
 
 
+## npm run dev (Short Note)
 
+`npm run dev` হলো package.json-এর `scripts` থেকে Development command চালানোর একটি পদ্ধতি।
 
+### ১. package.json Setup
+
+```json
+"scripts": {
+  "dev": "nodemon app.js"
+}
+```
+
+### ২. চালানোর Command
+
+```bash
+npm run dev
+```
+
+### ৩. কী কাজ করে?
+- Nodemon দিয়ে `app.js` চালু করে।
+- কোড পরিবর্তন করে Save দিলে automatically restart হয়।
+- বারবার `node app.js` লিখতে হয় না।
+
+### ৪. গুরুত্বপূর্ণ পার্থক্য
+
+| Command | কাজ |
+|---|---|
+| `node app.js` | সাধারণভাবে Node.js চালায় |
+| `npx nodemon app.js` | Nodemon দিয়ে চালায় |
+| `npm run dev` | package.json-এর `dev` script চালায় |
+
+**মনে রাখবে:** `npm run dev` নিজে কোনো বিশেষ Node.js feature নয়। এটি `package.json`-এ লেখা command চালায়।
 
 
 
