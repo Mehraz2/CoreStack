@@ -2790,10 +2790,58 @@ npm run dev
 
 
 
+<!-- =================================================================================== -->
+<!-- ----------------------------------------------------------------------------------- -->
+
+
+## NPM Custom Script
+
+### 1. Custom Script কী?
+`package.json`-এর `scripts` অংশে নিজের মতো Command তৈরি করাকে Custom Script বলে।
+
+### 2. Example
+
+```json
+"scripts": {
+    "start": "node ./practice.js",
+    "soulmate": "echo \"Rohit always hate this\"",
+    "dev": "nodemon ./practice.js"
+}
+```
+
+### 3. Custom Script চালানো
+
+```bash
+npm run soulmate
+npm run dev
+```
+
+**নিয়ম:** `npm run` + Script-এর নাম।
+
+### 4. npm start
+`start` একটি বিশেষ Script। এটি চালাতে `npm start` লেখা যায়।
+
+### 5. Multiple Commands
+
+একটি Script-এর মধ্যে একাধিক Command চালানো যায়।
+
+```json
+"chacha": "echo \"Running tests...\" && node script.js"
+```
+
+- `echo` = Terminal-এ লেখা দেখায়।
+- `&&` = প্রথম Command সফল হলে পরের Command চালায়।
+
+### 6. Colorful Terminal Output
+
+Terminal-এর লেখায় রং করার জন্য ANSI Color Code অথবা Chalk Package ব্যবহার করা যায়।
+
+**আজকের মূল শিক্ষা:** নিজের প্রয়োজন অনুযায়ী `package.json`-এ Custom Script তৈরি ও চালানো যায়।
 
 
 
-
+<!-- =================================================================================== -->
+<!-- =================================================================================== -->
 
 
 
