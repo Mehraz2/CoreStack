@@ -2726,14 +2726,48 @@ npm run dev
 
 
 
+<!-- ======================================================================================= -->
 
 
 
 
 
 
+## NPM Scripts: npm start & npm run dev
 
+NPM Scripts ব্যবহার করে `package.json` থেকে সহজে JavaScript ফাইল চালানো যায়।
 
+### ১. package.json Setup
+
+```json
+"scripts": {
+  "start": "node ./practice.js",
+  "dev": "nodemon ./practice.js"
+}
+```
+
+### ২. Commands
+
+```bash
+npm start
+```
+- Node.js দিয়ে `practice.js` চালায়।
+- একবার কোড Execute করে।
+
+```bash
+npm run dev
+```
+- Nodemon দিয়ে `practice.js` চালায়।
+- ফাইল Save করলে Automatically Restart হয়।
+
+### ৩. পার্থক্য
+
+| Command | কাজ |
+|---|---|
+| `npm start` | সাধারণভাবে ফাইল চালায় |
+| `npm run dev` | Nodemon দিয়ে চালায় |
+
+**মনে রাখবে:** `package.json`-এর Scripts-এ যে ফাইলের নাম দেওয়া থাকবে, সেই ফাইলই Execute হবে।
 
 
 
