@@ -2421,32 +2421,34 @@ const { log } = require("console");
 
 
 
-const express = require('express');
+// const express = require('express');
 
-const app = express();
+// const app = express();
 
-app.get('/', function(req, res) {
-    res.send('Hello Mehraz!');
-});
+// app.get('/', function(req, res) {
+//     res.send('Hello Mehraz!');
+// });
 
-app.listen(3000);
-
-
+// app.listen(3000);
 
 
 
 
-
+// console.log("Practice 10");
 
 
 
 
 
+console.log("NPM Start is Working!");
 
 
 
 
 
+console.log("CoreStack");
+console.log("Learning NPM");
+console.log("Backend Developer");
 
 
 
