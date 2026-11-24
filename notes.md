@@ -2919,13 +2919,82 @@ Hello World
 
 
 
+## Route (Express.js)
+
+### What is Route?
+Route হলো URL অনুযায়ী Server কী কাজ করবে বা কী Response পাঠাবে, তা নির্ধারণ করার নিয়ম।
+
+### Example:
+
+```js
+app.get('/', (req, res) => {
+    res.send('Home Page');
+});
+
+app.get('/about', (req, res) => {
+    res.send('About Page');
+});
+```
+
+### Explanation:
+
+- `/` → Home Page Route
+- `/about` → About Page Route
+- `app.get()` → GET request handle করে।
+- `res.send()` → Client-কে Response পাঠায়।
+
+### Remember:
+
+Route = URL অনুযায়ী আলাদা Response দেওয়া।
+
+**Example:**
+- `/` → Home
+- `/about` → About
+- `/contact` → Contact
+
+
+/=======================================================================================
+<!-- ================================================================================== -->
 
 
 
+## Route (Express.js)
+
+### What is Route?
+Route হলো URL অনুযায়ী Server কী কাজ করবে বা কী Response পাঠাবে, তা নির্ধারণ করার নিয়ম।
+
+### Example:
+
+```js
+app.get('/', (req, res) => {
+    res.send('Home Page');
+});
+
+app.get('/about', (req, res) => {
+    res.send('About Page');
+});
+```
+
+### Explanation:
+
+- `/` → Home Page Route
+- `/about` → About Page Route
+- `app.get()` → GET request handle করে।
+- `res.send()` → Client-কে Response পাঠায়।
+
+### Remember:
+
+Route = URL অনুযায়ী আলাদা Response দেওয়া।
+
+**Example:**
+- `/` → Home
+- `/about` → About
+- `/contact` → Contact
 
 
 
-
+<!-- ===================================================================================== -->
+<!-- ===================================================================================== -->
 
 
 
