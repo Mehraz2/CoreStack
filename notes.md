@@ -2847,10 +2847,74 @@ Terminal-এর লেখায় রং করার জন্য ANSI Color Code
 
 
 
+# Express.js – Basic Notes
+
+### 1. What is Express.js?
+Express.js হলো Node.js-এর একটি Web Framework।
+
+এটি দিয়ে সহজে Backend Server এবং API তৈরি করা যায়।
+
+### 2. Install Express.js
+
+```bash
+npm i express
+```
+
+### 3. Basic Express Server
+
+```js
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
+app.listen(3000, () => {
+    console.log('Server is running on http://localhost:3000');
+});
+```
+
+### 4. Code Explanation
+
+- `require('express')` → Express import করে।
+- `express()` → Express application তৈরি করে।
+- `app.get()` → GET request handle করে।
+- `req` → Client-এর পাঠানো request।
+- `res` → Client-কে response পাঠায়।
+- `res.send()` → Client-কে message পাঠায়।
+- `app.listen(3000)` → Port 3000-এ server চালু করে।
+
+### 5. How to Run?
+
+```bash
+node practice.js
+```
+
+তারপর browser-এ যাও:
+
+```text
+http://localhost:3000/
+```
+
+Output:
+
+```text
+Hello World
+```
+
+### Remember
+
+- Node.js = JavaScript Runtime
+- Express.js = Node.js-এর Web Framework
+- Express.js দিয়ে Backend Server ও API তৈরি করা সহজ হয়।
 
 
 
 
+<!-- ===================================================================================== -->
+<!-- ===================================================================================== -->
 
 
 
