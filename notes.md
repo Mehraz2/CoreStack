@@ -3003,9 +3003,38 @@ Route = URL অনুযায়ী আলাদা Response দেওয়া।
 
 
 
+## GET Method (Express.js)
+
+### What is GET?
+GET হলো HTTP Method, যার মাধ্যমে Client Server থেকে কোনো তথ্য বা Resource চায়।
+
+### Example:
+
+```js
+app.get('/about', (req, res) => {
+    res.send('About Page');
+});
+```
+
+### Explanation:
+- `app.get()` → GET request handle করে।
+- `'/about'` → Route বা URL।
+- `req` → Client-এর Request।
+- `res` → Server-এর Response।
+- `res.send()` → Client-কে Response পাঠায়।
+
+### Example URL:
+```text
+http://localhost:3000/about
+```
+
+**Remember:** GET = Server থেকে তথ্য চাওয়া।
 
 
 
+
+<!-- ======================================================================================= -->
+<!-- ======================================================================================= -->
 
 
 
