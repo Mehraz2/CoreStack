@@ -2440,15 +2440,24 @@ const { log } = require("console");
 
 
 
-console.log("NPM Start is Working!");
+// console.log("NPM Start is Working!");
 
 
 
 
 
-console.log("CoreStack");
-console.log("Learning NPM");
-console.log("Backend Developer");
+// console.log("CoreStack");
+// console.log("Learning NPM");
+// console.log("Backend Developer");
+
+
+
+
+// const chalk = require('chalk');
+
+// console.log(chalk.green("Success!"));
+// console.log(chalk.red("Error!"));
+// console.log(chalk.yellow("Warning!"));
 
 
 
@@ -2459,14 +2468,17 @@ console.log("Backend Developer");
 
 
 
+const express = require('express');
 
+const app = express()
 
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
 
-
-
-
-
-
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000')
+})
 
 
 
