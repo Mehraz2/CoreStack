@@ -2471,8 +2471,20 @@ const { log } = require("console");
 const express = require('express');
 
 
+const app = express();
 
 
+app.get("/", function(req, res) {
+    res.send("Neymer always my emotione");
+})
+
+app.get("/profile", function(req, res) {
+    res.send("C.Ronaldo , The real GOAT");
+})
+
+app.listen(3000)
+ 
+ 
 
 
 
