@@ -3041,10 +3041,46 @@ http://localhost:3000/about
 
 
 
+# GET Method & Route (Express.js)
 
+## 1. What is GET?
+GET হলো একটি HTTP Method, যার মাধ্যমে Client Server থেকে কোনো তথ্য চায়।
 
+**Example:** Browser-এ কোনো URL open করলে সাধারণত GET request পাঠানো হয়।
 
+## 2. What is Route?
+Route হলো URL অনুযায়ী Server কী কাজ করবে বা কী Response পাঠাবে, তা নির্ধারণ করার নিয়ম।
 
+**Example:**
+- `/` → Home Page
+- `/about` → About Page
+- `/contact` → Contact Page
+
+## 3. GET Route Example
+
+```js
+app.get('/about', (req, res) => {
+    res.send('About Page');
+});
+```
+
+### Code Explanation:
+- `app.get()` → GET Method ব্যবহার করে।
+- `'/about'` → Route-এর URL।
+- `req` → Client-এর Request।
+- `res` → Server-এর Response।
+- `res.send()` → Client-কে Response পাঠায়।
+
+## 4. Difference Between GET & Route
+
+- GET = তথ্য চাওয়ার HTTP Method।
+- Route = URL অনুযায়ী কী কাজ হবে, সেই নিয়ম।
+- GET Route = GET Method ব্যবহার করে তৈরি করা Route।
+
+**Remember: GET এবং Route এক জিনিস নয়। তারা একসাথে কাজ করে।**
+
+<!-- ==================================================================================== -->
+<!-- ==================================================================================== -->
 
 
 
