@@ -3087,8 +3087,57 @@ app.get('/about', (req, res) => {
 
 
 
+## Express.js – Multiple GET Routes
+
+### 1. What did I learn?
+Express.js দিয়ে একাধিক Route তৈরি করা যায়। প্রতিটি URL-এর জন্য আলাদা Response পাঠানো যায়।
+
+### 2. Code Example
+
+```js
+const express = require('express');
+
+const app = express();
+
+app.get('/', function(req, res) {
+    res.send('Neymar always my emotion');
+});
+
+app.get('/profile', function(req, res) {
+    res.send('C.Ronaldo, The real GOAT');
+});
+
+app.listen(3000);
+```
+
+### 3. Output
+
+**Home Route:**
+```text
+http://localhost:3000/
+```
+Output: `Neymar always my emotion`
+
+**Profile Route:**
+```text
+http://localhost:3000/profile
+```
+Output: `C.Ronaldo, The real GOAT`
+
+### 4. Remember
+
+- `app.get()` → GET request handle করে।
+- `/` → Home Route।
+- `/profile` → Profile Route।
+- `res.send()` → Browser-এ message পাঠায়।
+- `app.listen(3000)` → Port 3000-এ server চালু করে।
+
+**আজকের শিক্ষা:** Different URL = Different Response.
 
 
+
+<!-- ===================================================================================================== -->
+<!-- ===================================================================================================== -->
 
 
 
