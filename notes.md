@@ -3184,11 +3184,33 @@ Development-এর সময় সাধারণত `3000` Port ব্যবহ�
 
 
 
+## Nodemon (Node.js)
+
+### What is Nodemon?
+Nodemon হলো একটি tool, যা কোড পরিবর্তন করে Save করলে automatically server restart করে।
+
+### Install
+```bash
+npm i nodemon -g
+```
+
+### Run
+```bash
+nodemon practice.js
+```
+
+### How it works?
+- `nodemon practice.js` → ফাইলটি চালু করে।
+- কোড পরিবর্তন করে Save করলে → Automatically restart হয়।
+- `Ctrl + C` → Nodemon বন্ধ করে।
+
+### Remember
+Nodemon ব্যবহার করলে প্রতিবার কোড পরিবর্তনের পর manually server restart করতে হয় না।
 
 
 
-
-
+<!-- ======================================================================================================= -->
+<!-- ======================================================================================================= -->
 
 
 
