@@ -3219,14 +3219,77 @@ Nodemon ব্যবহার করলে প্রতিবার কোড �
 
 
 
+# Express.js – Middleware
+
+## What is Middleware?
+
+Middleware হলো একটি Function, যা Request এবং Response-এর মাঝখানে কাজ করে।
+
+সহজভাবে:
+
+**Request → Middleware → Route → Response**
+
+## Example Code
+
+```js
+const express = require('express');
+const app = express();
+
+// Middleware
+app.use((req, res, next) => {
+    console.log("Someone visited the website!");
+    next();
+});
+
+// Route
+app.get('/', (req, res) => {
+    res.send("Welcome to my website!");
+});
+
+app.listen(3000);
+```
+
+## How Middleware Works?
+
+1. Browser থেকে Request আসে।
+2. Middleware execute হয়।
+3. `console.log()` Terminal-এ message দেখায়।
+4. `next()` Request-কে পরবর্তী ধাপে পাঠায়।
+5. Route Response পাঠায়।
+
+## Important Terms
+
+- `app.use()` → Middleware ব্যবহার করে।
+- `req` → Request-এর তথ্য রাখে।
+- `res` → Response পাঠাতে সাহায্য করে।
+- `next()` → পরবর্তী Middleware বা Route-এ যেতে সাহায্য করে।
+- `console.log()` → Terminal-এ message দেখায়।
+- `res.send()` → Browser-এ Response পাঠায়।
+
+## When Does Middleware Run?
+
+যখন Browser থেকে নতুন Request আসে, তখন Middleware execute হয়।
+
+উদাহরণ:
+- Website প্রথমবার Visit করলে।
+- Browser Refresh করলে।
+- অন্য কোনো Route Visit করলে।
+
+## Remember
+
+Middleware = Request এবং Response-এর মাঝখানে কাজ করা Function।
+
+`next()` = পরবর্তী ধাপে যাও।
+
+**Today's Learning:** Middleware helps us control and process incoming requests in Express.js.
 
 
 
 
 
 
-
-
+<!-- ================================================================================================= -->
+<!-- ================================================================================================= -->
 
 
 
