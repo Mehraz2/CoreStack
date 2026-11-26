@@ -2494,34 +2494,51 @@ const { log } = require("console");
 
 
 
+// const express = require('express');
+
+
+// const app = express();
+
+
+// app.get("/", function(req, res) {
+//     res.send("Neymer always my emotione");
+// })
+
+// app.get("/profile", function(req, res) {
+//     res.send("C.Ronaldo , The real GOAT  ");
+// })
+
+// app.listen(3000)
+ 
+ 
+
+
+
+
+
+
+
+
+
+
 const express = require('express');
-
-
 const app = express();
 
 
-app.get("/", function(req, res) {
-    res.send("Neymer always my emotione");
-})
+// middleWere
+app.use((req, res, next) => {
+    console.log("Someone Visited The WEbsite....!");
+    next();
+});
 
-app.get("/profile", function(req, res) {
-    res.send("C.Ronaldo , The real GOAT  ");
-})
+
+// Route 
+app.get('/', (req, res)=> {
+    res.send ("Welcome To My Website..!")
+});
+
 
 app.listen(3000)
- 
- 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
