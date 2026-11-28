@@ -3368,8 +3368,71 @@ Regular Function এবং Arrow Function হলো JavaScript-এ Function ল�
 
 
 
+## Route-Specific Middleware in Express.js
 
+### 1. What is Route-Specific Middleware?
 
+Route-Specific Middleware হলো এমন Middleware, যেটি নির্দিষ্ট URL বা Route-এর Request-এর ওপর কাজ করে।
+
+অর্থাৎ, প্রতিটি Route-এর জন্য আলাদা Middleware ব্যবহার করা যায়।
+
+### 2. Syntax
+
+```js
+app.use('/about', function(req, res, next) {
+    console.log("Someone Visited About Page!");
+    next();
+});
+```
+
+### 3. Example
+
+```js
+const express = require('express');
+const app = express();
+
+// About Middleware
+app.use('/about', function(req, res, next) {
+    console.log("Someone Visited About Page!");
+    next();
+});
+
+// Feeling Middleware
+app.use('/feeling', function(req, res, next) {
+    console.log("Someone Visited Feeling Page!");
+    next();
+});
+
+// Sad Middleware
+app.use('/sad', function(req, res, next) {
+    console.log("Someone Visited Sad Page!");
+    next();
+});
+
+// Routes
+app.get('/', (req, res) => {
+    res.send("Welcome To My Website!");
+});
+
+app.get('/about', (req, res) => {
+    res.send("Welcome To About Page!");
+});
+
+app.get('/feeling', (req, res) => {
+    res.send("Welcome To Feeling Page!");
+});
+
+app.get('/sad', (req, res) => {
+    res.send("Welcome To Sad Page!");
+});
+
+app.listen(3000);
+```
+
+### 4. How Does It Work?
+
+<!-- =============================================================================================================== -->
+<!-- =============================================================================================================== -->
 
 
 
