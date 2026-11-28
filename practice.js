@@ -2541,12 +2541,26 @@ app.use( function(req, res, next)  {
 
 
 
-// middleWere
-app.use( function(req, res, next)  {
-    console.log("Someone Visited The WEbsite....!");
+
+// About Middleware
+app.use('/about', function(req, res, next) {
+    console.log("Someone Visited About Page!");
     next();
 });
 
+
+// Feeling Middleware
+app.use('/feeling', function(req, res, next) {
+    console.log("Someone Visited Feeling Page!");
+    next();
+});
+
+
+// Sad Middleware
+app.use('/sad', function(req, res, next) {
+    console.log("Someone Visited Sad Page!");
+    next();
+});
 
 // Route 
 app.get('/', (req, res)=> {
@@ -2567,7 +2581,7 @@ app.get('/feeling', (req, res)=> {
 
 
 // Route 
-app.get('/z', (req, res)=> {
+app.get('/sad', (req, res)=> {
     res.send ("Welcome To My Website wht uou like..! but she didn't like me at all")
 });
 
