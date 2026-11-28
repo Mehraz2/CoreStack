@@ -2526,7 +2526,23 @@ const app = express();
 
 
 // middleWere
-app.use((req, res, next) => {
+app.use( function(req, res, next)  {
+    console.log("Someone Visited The WEbsite....!");
+    next();
+});
+
+
+
+// middleWere
+app.use( function(req, res, next)  {
+    console.log("Someone Visited The WEbsite....!");
+    next();
+});
+
+
+
+// middleWere
+app.use( function(req, res, next)  {
     console.log("Someone Visited The WEbsite....!");
     next();
 });
@@ -2536,6 +2552,25 @@ app.use((req, res, next) => {
 app.get('/', (req, res)=> {
     res.send ("Welcome To My Website..!")
 });
+
+
+// Route 
+app.get('/about', (req, res)=> {
+    res.send ("Welcome To My Website wht uou like..!")
+});
+
+
+// Route 
+app.get('/feeling', (req, res)=> {
+    res.send ("Welcome To My Website wht uou like..! but she didn't like me at all")
+});
+
+
+// Route 
+app.get('/z', (req, res)=> {
+    res.send ("Welcome To My Website wht uou like..! but she didn't like me at all")
+});
+
 
 
 app.listen(3000)
