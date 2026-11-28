@@ -3297,11 +3297,71 @@ Middleware = Request এবং Response-এর মাঝখানে কাজ �
 
 
 
+# JavaScript – Regular Function vs Arrow Function
+
+JavaScript-এ Function লেখার দুটি পদ্ধতি রয়েছে।
+
+### 1. Regular Function
+
+```js
+function(req, res, next) {
+    console.log("Hello");
+}
+```
+
+**Explanation:**
+- `function` হলো Function লেখার Keyword।
+- `req, res, next` হলো Function-এর Parameters।
+- `{ }` এর ভিতরে Function-এর কাজ লেখা হয়।
+
+### 2. Arrow Function
+
+```js
+(req, res, next) => {
+    console.log("Hello");
+}
+```
+
+**Explanation:**
+- এখানে `function` Keyword ব্যবহার করা হয়নি।
+- `=>` চিহ্ন দিয়ে Arrow Function তৈরি করা হয়েছে।
+- Parameters এবং Function-এর কাজ একইভাবে থাকে।
+
+### Express.js-এ ব্যবহার
+
+Regular Function:
+```js
+app.use(function(req, res, next) {
+    console.log("Middleware Working");
+    next();
+});
+```
+
+Arrow Function:
+```js
+app.use((req, res, next) => {
+    console.log("Middleware Working");
+    next();
+});
+```
+
+### Main Difference
+
+- Regular Function-এ `function` Keyword ব্যবহার করা হয়।
+- Arrow Function-এ `=>` ব্যবহার করা হয়।
+- দুটোই Function লেখার পদ্ধতি।
+- সাধারণ Middleware-এর ক্ষেত্রে দুটোই একই কাজ করতে পারে।
+
+### Remember
+
+Regular Function এবং Arrow Function হলো JavaScript-এ Function লেখার দুটি আলাদা Syntax।
+
+ভিডিওতে Regular Function ব্যবহার করলে আপাতত সেটাই অনুসরণ করব।
 
 
 
-
-
+<!-- ============================================================================================================ -->
+<!-- =========================================================================================================== -->
 
 
 
